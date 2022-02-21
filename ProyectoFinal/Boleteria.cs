@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class Form2 : Form
+    public partial class Boleteria : Form
     {
-        public Form2()
+        public Boleteria()
         {
             InitializeComponent();
         }

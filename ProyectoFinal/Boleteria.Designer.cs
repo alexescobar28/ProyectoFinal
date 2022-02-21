@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal
 {
-    partial class Form2
+    partial class Boleteria
     {
         /// <summary>
         /// Required designer variable.

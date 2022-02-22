@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal
 {
-    partial class Form1
+    partial class Cliente
     {
         /// <summary>
         /// Variable del diseñador necesaria.
@@ -41,7 +41,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(182, 9);
+            this.label1.Location = new System.Drawing.Point(161, 23);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(42, 13);
             this.label1.TabIndex = 0;
@@ -103,6 +103,7 @@
             this.btnSiguiente.TabIndex = 7;
             this.btnSiguiente.Text = "Siguiente ";
             this.btnSiguiente.UseVisualStyleBackColor = true;
+            this.btnSiguiente.Click += new System.EventHandler(this.btnSiguiente_Click);
             // 
             // Form1
             // 

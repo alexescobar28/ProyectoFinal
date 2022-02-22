@@ -80,6 +80,11 @@
             // cmbSnack
             // 
             this.cmbSnack.FormattingEnabled = true;
+            this.cmbSnack.Items.AddRange(new object[] {
+            "Manicho $1",
+            "Nachos $2.50",
+            "Tango   $0.50",
+            "Hot - Dog  $2"});
             this.cmbSnack.Location = new System.Drawing.Point(147, 58);
             this.cmbSnack.Name = "cmbSnack";
             this.cmbSnack.Size = new System.Drawing.Size(121, 21);
@@ -125,7 +130,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(157, 326);
+            this.button1.Location = new System.Drawing.Point(286, 329);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(122, 36);
             this.button1.TabIndex = 11;

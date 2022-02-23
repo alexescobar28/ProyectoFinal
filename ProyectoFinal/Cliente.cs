@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class Form2 : Form
+    public partial class Cliente : Form
     {
-        public Form2()
+        public Cliente()
         {
             InitializeComponent();
+        }
+
+        private void btnSiguiente_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

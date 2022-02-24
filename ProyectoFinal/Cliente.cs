@@ -19,7 +19,10 @@ namespace ProyectoFinal
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            
+            Comida comida = new Comida();
+            this.Hide();
+            comida.Show();
+
         }
     }
 }

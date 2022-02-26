@@ -16,5 +16,12 @@ namespace ProyectoFinal
         {
             InitializeComponent();
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            Comida comida = new Comida();
+            this.Hide();
+            comida.Show();
+        }
     }
 }

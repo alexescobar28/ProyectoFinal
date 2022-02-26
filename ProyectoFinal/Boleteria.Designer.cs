@@ -188,6 +188,7 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "Comida ";
             this.button2.UseVisualStyleBackColor = true;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // dateTimePicker1
             // 
@@ -196,7 +197,7 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 16;
             // 
-            // Form2
+            // Boleteria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -217,7 +218,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.comboBox1);
-            this.Name = "Form2";
+            this.Name = "Boleteria";
             this.Text = "Boleteria ";
             this.ResumeLayout(false);
             this.PerformLayout();

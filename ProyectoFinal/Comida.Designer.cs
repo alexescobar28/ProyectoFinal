@@ -38,7 +38,7 @@
             this.cmbBebidas = new System.Windows.Forms.ComboBox();
             this.chkCombo2 = new System.Windows.Forms.CheckBox();
             this.chkCombo3 = new System.Windows.Forms.CheckBox();
-            this.btmCalcular = new System.Windows.Forms.Button();
+            this.btmSiguiente = new System.Windows.Forms.Button();
             this.lblCombo1 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.lbl = new System.Windows.Forms.Label();
@@ -128,9 +128,10 @@
             this.cmbSnack.FormattingEnabled = true;
             this.cmbSnack.Items.AddRange(new object[] {
             "Manicho $1",
-            "Nachos $2.50",
+            "Nachos con queso $2.50",
             "Tango   $0.50",
-            "Hot - Dog  $2"});
+            "Hot - Dog  $2",
+            "Ninguno"});
             this.cmbSnack.Location = new System.Drawing.Point(135, 90);
             this.cmbSnack.Name = "cmbSnack";
             this.cmbSnack.Size = new System.Drawing.Size(121, 21);
@@ -144,7 +145,8 @@
             "Pepsi $1",
             "7 up  $1",
             "Granizado $2",
-            "NesTea $1"});
+            "NesTea $1",
+            "Ninguno"});
             this.cmbBebidas.Location = new System.Drawing.Point(135, 183);
             this.cmbBebidas.Name = "cmbBebidas";
             this.cmbBebidas.Size = new System.Drawing.Size(121, 21);
@@ -173,15 +175,15 @@
             this.chkCombo3.ThreeState = true;
             this.chkCombo3.UseVisualStyleBackColor = true;
             // 
-            // btmCalcular
+            // btmSiguiente
             // 
-            this.btmCalcular.Location = new System.Drawing.Point(535, 510);
-            this.btmCalcular.Name = "btmCalcular";
-            this.btmCalcular.Size = new System.Drawing.Size(122, 36);
-            this.btmCalcular.TabIndex = 11;
-            this.btmCalcular.Text = "Siguiente";
-            this.btmCalcular.UseVisualStyleBackColor = true;
-            this.btmCalcular.Click += new System.EventHandler(this.btmCalcular_Click);
+            this.btmSiguiente.Location = new System.Drawing.Point(535, 510);
+            this.btmSiguiente.Name = "btmSiguiente";
+            this.btmSiguiente.Size = new System.Drawing.Size(122, 36);
+            this.btmSiguiente.TabIndex = 11;
+            this.btmSiguiente.Text = "Siguiente";
+            this.btmSiguiente.UseVisualStyleBackColor = true;
+            this.btmSiguiente.Click += new System.EventHandler(this.btmSiguiente_Click);
             // 
             // lblCombo1
             // 
@@ -332,7 +334,7 @@
             this.pcbBebida4.Image = global::ProyectoFinal.Properties.Resources.Bebida_4;
             this.pcbBebida4.Location = new System.Drawing.Point(277, 156);
             this.pcbBebida4.Name = "pcbBebida4";
-            this.pcbBebida4.Size = new System.Drawing.Size(100, 93);
+            this.pcbBebida4.Size = new System.Drawing.Size(124, 93);
             this.pcbBebida4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pcbBebida4.TabIndex = 26;
             this.pcbBebida4.TabStop = false;
@@ -341,7 +343,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(689, 558);
+            this.ClientSize = new System.Drawing.Size(718, 608);
             this.Controls.Add(this.pcbBebida4);
             this.Controls.Add(this.pcbBebida3);
             this.Controls.Add(this.pcbBebida2);
@@ -357,7 +359,7 @@
             this.Controls.Add(this.lbl);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.lblCombo1);
-            this.Controls.Add(this.btmCalcular);
+            this.Controls.Add(this.btmSiguiente);
             this.Controls.Add(this.chkCombo3);
             this.Controls.Add(this.chkCombo2);
             this.Controls.Add(chkCombo1);
@@ -369,6 +371,7 @@
             this.Controls.Add(this.label1);
             this.Name = "Comida";
             this.Text = "Comida";
+            this.Load += new System.EventHandler(this.Comida_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pcbBebida1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSnack4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSnack3)).EndInit();
@@ -393,9 +396,10 @@
         private System.Windows.Forms.Label lblCombos;
         private System.Windows.Forms.ComboBox cmbSnack;
         private System.Windows.Forms.ComboBox cmbBebidas;
+        private System.Windows.Forms.CheckBox chkCombo1;
         private System.Windows.Forms.CheckBox chkCombo2;
         private System.Windows.Forms.CheckBox chkCombo3;
-        private System.Windows.Forms.Button btmCalcular;
+        private System.Windows.Forms.Button btmSiguiente;
         private System.Windows.Forms.Label lblCombo1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbl;

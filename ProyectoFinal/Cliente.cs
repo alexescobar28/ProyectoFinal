@@ -19,7 +19,10 @@ namespace ProyectoFinal
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            
+            Boleteria boleteria = new Boleteria();
+            this.Hide();
+            boleteria.Show();
+
         }
     }
 }

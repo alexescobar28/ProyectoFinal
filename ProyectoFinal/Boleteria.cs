@@ -76,6 +76,7 @@ namespace ProyectoFinal
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
+            /*
             if (comboBox1.SelectedIndex == -1)
             {
                 pictureBox1 = null;
@@ -106,6 +107,8 @@ namespace ProyectoFinal
                 pictureBox1 = ProyectoFinal.Properties.Resources.Son_Como_niños;
                 pictureBox2 = ProyectoFinal.Properties.Resources.Sinopsis_Son_como_niños;
             }
+            */
+
         }
 
         

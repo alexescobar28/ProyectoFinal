@@ -34,9 +34,6 @@ namespace ProyectoFinal
                 Boleteria boleteria = new Boleteria();
                 this.Hide();
                 boleteria.Show();
-            //  MessageBox.Show("hola mundo "+persona.apellido+" "+persona.nombre+" "+persona.cedula);
-
-
         }
     }
 }

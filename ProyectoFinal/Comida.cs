@@ -151,7 +151,7 @@ namespace ProyectoFinal
             Facturas facturas = new Facturas();
             this.Hide();
             facturas.Show();
-            if (chkCombo1.Checked == true)
+            if (chkCombo11.Checked == true)
             {
                 alimentos.combos += "-Combo1-";
                 alimentos.subTotal += 10;
@@ -166,7 +166,7 @@ namespace ProyectoFinal
                 alimentos.combos += "-Combo3-";
                 alimentos.subTotal += 7;
             }
-            if (chkCombo1.Checked == false && chkCombo2.Checked == false && chkCombo3.Checked == false)
+            if (chkCombo11.Checked == false && chkCombo2.Checked == false && chkCombo3.Checked == false)
             {
                 alimentos.combos += "Ninguno";
             }

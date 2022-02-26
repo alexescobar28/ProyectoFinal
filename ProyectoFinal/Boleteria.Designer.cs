@@ -47,9 +47,6 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtnumeroBoletos = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
@@ -210,6 +207,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Comprar";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
@@ -255,31 +253,6 @@
             this.pictureBox2.TabIndex = 20;
             this.pictureBox2.TabStop = false;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(488, 94);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(130, 16);
-            this.label5.TabIndex = 21;
-            this.label5.Text = "Numero de entradas";
-            // 
-            // txtnumeroBoletos
-            // 
-            this.txtnumeroBoletos.Location = new System.Drawing.Point(637, 87);
-            this.txtnumeroBoletos.Name = "txtnumeroBoletos";
-            this.txtnumeroBoletos.Size = new System.Drawing.Size(100, 22);
-            this.txtnumeroBoletos.TabIndex = 22;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(766, 92);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(56, 16);
-            this.label6.TabIndex = 23;
-            this.label6.Text = "(limite 9)";
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -295,9 +268,6 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 835);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.txtnumeroBoletos);
-            this.Controls.Add(this.label5);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pictureBox1);
@@ -348,9 +318,6 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtnumeroBoletos;
-        private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
     }
 }

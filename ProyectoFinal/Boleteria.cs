@@ -15,28 +15,71 @@ namespace ProyectoFinal
         int cantidad;
         double subtotalBoletos;
         String fecha;
+        int contadorBoletos;
         public Boleteria()
         {
             InitializeComponent();
+            contadorBoletos = 0;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            cantidad = Convert.ToInt32(txtnumeroBoletos);
-            subtotalBoletos = cantidad * 5;
+            
+         
+            if (a1.Checked==true)
+            {
+                contadorBoletos++;
+            }
+            if (a2.Checked == true)
+            {
+                contadorBoletos++;
+            }
+            if (a3.Checked == true)
+            {
+                contadorBoletos++;
+            }
+            if (b1.Checked == true)
+            {
+                contadorBoletos++;
+            }
+            if (b2.Checked == true)
+            {
+                contadorBoletos++;
+            }
+            if (b3.Checked == true)
+            {
+                contadorBoletos++;
+            }
+            if (b1.Checked == true)
+            {
+                contadorBoletos++;
+            }
+            if (b2.Checked == true)
+            {
+                contadorBoletos++;
+            }
+            if (c3.Checked == true)
+            {
+                contadorBoletos++;
+            }
 
-            fecha=DateTimePicker.Text;
+            cantidad = contadorBoletos;
+            subtotalBoletos = cantidad * 5;
+            fecha =DateTimePicker.Text;
+            
             MessageBox.Show(fecha);
             Comida comida = new Comida();
             this.Hide();
             comida.Show();
+            
         }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (comboBox1.SelectedIndex == -1)
             {
-
+                pictureBox1 = null;
+                pictureBox2 = null;
             }
             if (comboBox1.SelectedIndex == 0)
             {
@@ -65,11 +108,18 @@ namespace ProyectoFinal
             }
         }
 
-     
+        
 
         private void checkBox9_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Facturas f2 = new Facturas();
+            f2.Show();
+            this.Hide();
         }
     }
 }

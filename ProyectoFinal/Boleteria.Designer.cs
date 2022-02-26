@@ -48,6 +48,8 @@
             this.label3 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
+            this.subtitulada = new System.Windows.Forms.RadioButton();
+            this.traducida = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             this.SuspendLayout();
@@ -262,11 +264,35 @@
             this.label7.TabIndex = 24;
             this.label7.Text = "Costo cada entrada: 5$";
             // 
+            // subtitulada
+            // 
+            this.subtitulada.AutoSize = true;
+            this.subtitulada.Location = new System.Drawing.Point(351, 103);
+            this.subtitulada.Name = "subtitulada";
+            this.subtitulada.Size = new System.Drawing.Size(93, 20);
+            this.subtitulada.TabIndex = 25;
+            this.subtitulada.TabStop = true;
+            this.subtitulada.Text = "subtitulada";
+            this.subtitulada.UseVisualStyleBackColor = true;
+            // 
+            // traducida
+            // 
+            this.traducida.AutoSize = true;
+            this.traducida.Location = new System.Drawing.Point(351, 130);
+            this.traducida.Name = "traducida";
+            this.traducida.Size = new System.Drawing.Size(84, 20);
+            this.traducida.TabIndex = 26;
+            this.traducida.TabStop = true;
+            this.traducida.Text = "traducida";
+            this.traducida.UseVisualStyleBackColor = true;
+            // 
             // Boleteria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1004, 835);
+            this.Controls.Add(this.traducida);
+            this.Controls.Add(this.subtitulada);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
@@ -319,5 +345,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.RadioButton subtitulada;
+        private System.Windows.Forms.RadioButton traducida;
     }
 }

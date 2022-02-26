@@ -27,10 +27,10 @@ namespace ProyectoFinal
 
             fecha=DateTimePicker.Text;
             MessageBox.Show(fecha);
-         /*   Comida comida = new Comida();
+            Comida comida = new Comida();
             this.Hide();
             comida.Show();
-   */     }
+        }
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {

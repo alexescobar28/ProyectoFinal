@@ -17,15 +17,15 @@ namespace ProyectoFinal
         {
             public int cantidad;
             public double subtotalBoletos;
-            public String pelicula;
-            public String fecha;
-            public String tipo;
+            public string pelicula;
+            public string fecha;
+            public string tipo;
             public string butacas;
         }
         static public InformacionCompra compra;
         
         int contadorBoletos;
-        
+        const int VALOR_ENTRADA = 5;
         public Boleteria()
         {
             InitializeComponent();
@@ -52,10 +52,11 @@ namespace ProyectoFinal
             compra.cantidad = contadorBoletos;
             compra.subtotalBoletos = compra.cantidad * 5;
             compra.fecha =dtFecha.Text;
-            Datos.pelicula = compra.pelicula+compra.tipo;
+            Datos.pelicula = compra.pelicula+'-'+compra.tipo;
             Datos.butacas = compra.butacas;
             Datos.fecha =compra.fecha;
-
+            Datos.contadorAsientos = contadorBoletos;
+            Datos.subtotalEntradas = VALOR_ENTRADA * contadorBoletos;
             Comida comida = new Comida();
             this.Hide();
             comida.Show();
@@ -134,48 +135,48 @@ namespace ProyectoFinal
             if (a1.Checked == true)
             {
                 contadorBoletos++;
-                compra.butacas += "A1";
+                compra.butacas += "A1,";
 
             }
             if (a2.Checked == true)
             {
                 contadorBoletos++;
-                compra.butacas += "A2";
+                compra.butacas += "A2,";
             }
             if (a3.Checked == true)
             {
                 contadorBoletos++;
-                compra.butacas += "A3";
+                compra.butacas += "A3,";
             }
             if (b1.Checked == true)
             {
                 contadorBoletos++;
-                compra.butacas += "B1";
+                compra.butacas += "B1,";
             }
             if (b2.Checked == true)
             {
                 contadorBoletos++;
-                compra.butacas += "B2";
+                compra.butacas += "B2,";
             }
             if (b3.Checked == true)
             {
                 contadorBoletos++;
-                compra.butacas += "B3";
+                compra.butacas += "B3,";
             }
             if (b1.Checked == true)
             {
                 contadorBoletos++;
-                compra.butacas += "B4";
+                compra.butacas += "B4,";
             }
             if (b2.Checked == true)
             {
                 contadorBoletos++;
-                compra.butacas += "B5";
+                compra.butacas += "B5,";
             }
             if (c3.Checked == true)
             {
                 contadorBoletos++;
-                compra.butacas += "B6";
+                compra.butacas += "B6,";
             }
         }
     }

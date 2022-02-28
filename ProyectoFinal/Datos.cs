@@ -14,5 +14,9 @@ namespace ProyectoFinal
         static public string pelicula;
         static public string fecha;
         static public string butacas;
+        static public string comida;
+        static public int  contadorAsientos;
+        static public double subtotalEntradas;
+        static public double subtotalComidas;
     }
 }

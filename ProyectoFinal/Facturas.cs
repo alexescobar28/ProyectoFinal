@@ -14,12 +14,13 @@ namespace ProyectoFinal
     {
         public struct Facturar
         {
-            public String CI;
-            public String nombre;
-            public String apellido;
-            public String pelicula;
-            public String butacas;
-            public String fecha;
+            public string CI;
+            public string nombre;
+            public string apellido;
+            public string pelicula;
+            public string butacas;
+            public string fecha;
+            public int sala;
             public int cantidadAsientos;
             public string comida;
             public double subtotalEntradas;
@@ -37,6 +38,13 @@ namespace ProyectoFinal
             lblPelicula.Text = informacion.pelicula;
             lblFecha.Text = informacion.fecha;
             lblButacas.Text = informacion.butacas;
+            lblAsientos.Text=informacion.cantidadAsientos.ToString();
+            lblSubtotalEntradas.Text="$"+informacion.subtotalEntradas.ToString();
+            lblComida.Text=informacion.comida;
+            lblSubtotalComida.Text = "$"+informacion.subTotalComida.ToString();
+            informacion.TotalPagar = informacion.subTotalComida + informacion.subtotalEntradas;
+            lblTotalPagar.Text = "$"+informacion.TotalPagar.ToString();
+            lblSala.Text = informacion.sala.ToString();
         }
         void asignarVariables()
         {
@@ -46,6 +54,14 @@ namespace ProyectoFinal
             informacion.fecha = Datos.fecha;
             informacion.pelicula = Datos.pelicula;
             informacion.butacas = Datos.butacas;
+            informacion.cantidadAsientos = Datos.contadorAsientos;
+            informacion.subtotalEntradas= Datos.subtotalEntradas;
+            informacion.comida = Datos.comida;
+            informacion.subTotalComida = Datos.subtotalComidas;
+            Random aleatorio=new Random();
+            int numero;
+            numero=aleatorio.Next(1,11);
+            informacion.sala = numero;
         }
     }
 }

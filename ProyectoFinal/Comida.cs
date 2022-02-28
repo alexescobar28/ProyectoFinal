@@ -44,29 +44,13 @@ namespace ProyectoFinal
 
         private void btmCalcular_Click(object sender, EventArgs e)
         {
-
+            colocarPrecios();
+            Datos.comida=alimentos.combos+"\nSnack:"+alimentos.snack + "\nBebida:"+alimentos.bebida;
+            Datos.subtotalComidas = alimentos.subTotal;
             Facturas facturas = new Facturas();
             this.Hide();
             facturas.Show();
-            if (chkCombo11.Checked == true)
-            {
-                alimentos.combos += "-Combo1-";
-                alimentos.subTotal += 10;
-            }
-            if (chkCombo2.Checked == true)
-            {
-                alimentos.combos += "-Combo2-";
-                alimentos.subTotal += 10;
-            }
-            if (chkCombo3.Checked == true)
-            {
-                alimentos.combos += "-Combo3-";
-                alimentos.subTotal += 7;
-            }
-            if (chkCombo11.Checked == false && chkCombo2.Checked == false && chkCombo3.Checked == false)
-            {
-                alimentos.combos += "Ninguno";
-            }
+           
         }
 
         private ComboBox GetCmbSnack()
@@ -194,6 +178,28 @@ namespace ProyectoFinal
 
         private void btmSiguiente_Click(object sender, EventArgs e)
         {
+        }
+        void colocarPrecios()
+        {
+            if (chkCombo11.Checked == true)
+            {
+                alimentos.combos += "-Combo1-";
+                alimentos.subTotal += 10;
+            }
+            if (chkCombo2.Checked == true)
+            {
+                alimentos.combos += "-Combo2-";
+                alimentos.subTotal += 10;
+            }
+            if (chkCombo3.Checked == true)
+            {
+                alimentos.combos += "-Combo3-";
+                alimentos.subTotal += 7;
+            }
+            if (chkCombo11.Checked == false && chkCombo2.Checked == false && chkCombo3.Checked == false)
+            {
+                alimentos.combos += "Ninguno";
+            }
         }
     }
 }

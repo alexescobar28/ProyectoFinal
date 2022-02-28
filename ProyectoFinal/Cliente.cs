@@ -12,6 +12,14 @@ namespace ProyectoFinal
 {
     public partial class Cliente : Form
     {
+        public struct InformacionCliente
+        {
+            public String nombre;
+            public String apellido;
+            public String cedula;
+
+        }
+        static public InformacionCliente persona;
         public Cliente()
         {
             InitializeComponent();
@@ -19,10 +27,13 @@ namespace ProyectoFinal
 
         private void btnSiguiente_Click(object sender, EventArgs e)
         {
-            Boleteria boleteria = new Boleteria();
-            this.Hide();
-            boleteria.Show();
+            persona.nombre = txtNombre.Text;
+            persona.apellido = txtApellido.Text;
+            persona.cedula = txtCedula.Text;
 
+                Boleteria boleteria = new Boleteria();
+                this.Hide();
+                boleteria.Show();
         }
     }
 }

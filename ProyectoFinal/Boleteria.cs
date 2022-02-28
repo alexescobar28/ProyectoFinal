@@ -20,6 +20,7 @@ namespace ProyectoFinal
             public String pelicula;
             public String fecha;
             public String tipo;
+            public string butacas;
         }
         static public InformacionCompra compra;
         
@@ -30,8 +31,7 @@ namespace ProyectoFinal
             InitializeComponent();
             contadorBoletos = 0;
         }
-
-        private void button2_Click(object sender, EventArgs e)
+        void contarTipo()
         {
             if (subtitulada.Checked)
             {
@@ -41,48 +41,21 @@ namespace ProyectoFinal
             {
                 compra.tipo = "Subtitulada";
             }
+
          
-            if (a1.Checked==true)
-            {
-                contadorBoletos++;
-            }
-            if (a2.Checked == true)
-            {
-                contadorBoletos++;
-            }
-            if (a3.Checked == true)
-            {
-                contadorBoletos++;
-            }
-            if (b1.Checked == true)
-            {
-                contadorBoletos++;
-            }
-            if (b2.Checked == true)
-            {
-                contadorBoletos++;
-            }
-            if (b3.Checked == true)
-            {
-                contadorBoletos++;
-            }
-            if (b1.Checked == true)
-            {
-                contadorBoletos++;
-            }
-            if (b2.Checked == true)
-            {
-                contadorBoletos++;
-            }
-            if (c3.Checked == true)
-            {
-                contadorBoletos++;
-            }
+        }
+        private void button2_Click(object sender, EventArgs e)
+        {
+            contarTipo();
+            asignarAsientos();
 
             compra.cantidad = contadorBoletos;
             compra.subtotalBoletos = compra.cantidad * 5;
-            compra.fecha =DateTimePicker.Text;
-            
+            compra.fecha =dtFecha.Text;
+            Datos.pelicula = compra.pelicula+compra.tipo;
+            Datos.butacas = compra.butacas;
+            Datos.fecha =compra.fecha;
+
             Comida comida = new Comida();
             this.Hide();
             comida.Show();
@@ -91,101 +64,119 @@ namespace ProyectoFinal
 
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            /*
-            if (comboBox1.SelectedIndex == -1)
+
+            if (cmbPeliculas.SelectedIndex == 0)
             {
-                pictureBox1 = null;
-                pictureBox2 = null;
-                pelicula=null;
+                pbPeliculas.Image = ProyectoFinal.Properties.Resources.Avengers;
+                compra.pelicula = cmbPeliculas.Text;
             }
-            if (comboBox1.SelectedIndex == 0)
+            if (cmbPeliculas.SelectedIndex == 1)
             {
-                pictureBox1 = ProyectoFinal.Properties.Resources.Avengers;
-                pictureBox2 = ProyectoFinal.Properties.Resources.Sinopsis_Avengers;
-                pelicula="Avengers";
+                pbPeliculas.Image = ProyectoFinal.Properties.Resources.John_Wick;
+                compra.pelicula = cmbPeliculas.Text;
             }
-            if (comboBox1.SelectedIndex == 1)
+            if (cmbPeliculas.SelectedIndex == 2)
             {
-                pictureBox1 = ProyectoFinal.Properties.Resources.John_Wick;
-                pictureBox2 = ProyectoFinal.Properties.Resources.Sinopsis_John_Wick;
-                pelicula="John Wick";
+                pbPeliculas.Image = ProyectoFinal.Properties.Resources.Spider_man;
+                compra.pelicula = cmbPeliculas.Text;
             }
-            if (comboBox1.SelectedIndex == 2)
+            if (cmbPeliculas.SelectedIndex == 3)
             {
-                pictureBox1 = ProyectoFinal.Properties.Resources.Spider-man;
-                pictureBox2 = ProyectoFinal.Properties.Resources.Sinopsis_Spider-man;
-                pelicula="Spider-man";
+                pbPeliculas.Image = ProyectoFinal.Properties.Resources.Insidious;
+                compra.pelicula = cmbPeliculas.Text;
             }
-            if (comboBox1.SelectedIndex == 3)
+            if (cmbPeliculas.SelectedIndex == 4)
             {
-                pictureBox1 = ProyectoFinal.Properties.Resources.Insidious;
-                pictureBox2 = ProyectoFinal.Properties.Resources.Sinopsis_Insidious;
-                pelicula="Insidious";
+                pbPeliculas.Image = ProyectoFinal.Properties.Resources.Son_como_niños;
+                compra.pelicula = cmbPeliculas.Text;
             }
-            if (comboBox1.SelectedIndex == 4)
-            {
-                pictureBox1 = ProyectoFinal.Properties.Resources.Son_Como_niños;
-                pictureBox2 = ProyectoFinal.Properties.Resources.Sinopsis_Son_como_niños;
-                pelicula="Son como niños"
-            }
-            */
+
 
         }
 
-        
+
 
         private void checkBox9_CheckedChanged(object sender, EventArgs e)
         {
 
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void subtitulada_CheckedChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void DateTimePicker_ValueChanged(object sender, EventArgs e)
+        {
+            validarFecha();
+        }
+        void validarFecha()
+        {
+            DateTime hoy = DateTime.Today;
+            if (dtFecha.Value.Date < hoy)
+            {
+                MessageBox.Show("Fecha invalida no puede seleccionar una fecha pasada", "Error de ingreso", MessageBoxButtons.OK,MessageBoxIcon.Warning);
+            }
+            else
+            {
+                DateTime fecha=dtFecha.Value;
+                compra.fecha = fecha.ToString();
+
+            }
+        }
+
+        private void a1_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+        void asignarAsientos()
+        {
             if (a1.Checked == true)
             {
                 contadorBoletos++;
+                compra.butacas += "A1";
+
             }
             if (a2.Checked == true)
             {
                 contadorBoletos++;
+                compra.butacas += "A2";
             }
             if (a3.Checked == true)
             {
                 contadorBoletos++;
+                compra.butacas += "A3";
             }
             if (b1.Checked == true)
             {
                 contadorBoletos++;
+                compra.butacas += "B1";
             }
             if (b2.Checked == true)
             {
                 contadorBoletos++;
+                compra.butacas += "B2";
             }
             if (b3.Checked == true)
             {
                 contadorBoletos++;
+                compra.butacas += "B3";
             }
             if (b1.Checked == true)
             {
                 contadorBoletos++;
+                compra.butacas += "B4";
             }
             if (b2.Checked == true)
             {
                 contadorBoletos++;
+                compra.butacas += "B5";
             }
             if (c3.Checked == true)
             {
                 contadorBoletos++;
+                compra.butacas += "B6";
             }
-
-            compra.cantidad = contadorBoletos;
-            compra.subtotalBoletos = compra.cantidad * 5;
-            compra.fecha = DateTimePicker.Text;
-
-            Facturas f2 = new Facturas();
-            f2.Show();
-            this.Hide();
         }
     }
 }

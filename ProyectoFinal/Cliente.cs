@@ -30,10 +30,13 @@ namespace ProyectoFinal
             persona.nombre = txtNombre.Text;
             persona.apellido = txtApellido.Text;
             persona.cedula = txtCedula.Text;
-
-                Boleteria boleteria = new Boleteria();
+            Datos.CI = persona.cedula;
+            Datos.nombre = persona.nombre;
+            Datos.apellido = persona.apellido;
+            Boleteria boleteria = new Boleteria();
                 this.Hide();
                 boleteria.Show();
+            
         }
     }
 }

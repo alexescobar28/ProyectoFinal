@@ -436,6 +436,7 @@
     <Compile Include="Comida.Designer.cs">
       <DependentUpon>Comida.cs</DependentUpon>
     </Compile>
+    <Compile Include="Datos.cs" />
     <Compile Include="Facturas.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -528,6 +529,21 @@
   <ItemGroup>
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.Analyzers.dll" />
     <Analyzer Include="..\packages\Microsoft.CodeAnalysis.Analyzers.1.1.0\analyzers\dotnet\cs\Microsoft.CodeAnalysis.CSharp.Analyzers.dll" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Avengers1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Insidious1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\John_Wick1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Son_como_niños1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Spider_man1.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets" Condition="Exists('..\packages\MongoDB.Libmongocrypt.1.0.0\build\MongoDB.Libmongocrypt.targets')" />

@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.cmbPeliculas = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,83 +41,77 @@
             this.c1 = new System.Windows.Forms.CheckBox();
             this.c2 = new System.Windows.Forms.CheckBox();
             this.c3 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.DateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dtFecha = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
             this.subtitulada = new System.Windows.Forms.RadioButton();
             this.traducida = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pbPeliculas = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPeliculas)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cmbPeliculas
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbPeliculas.FormattingEnabled = true;
+            this.cmbPeliculas.Items.AddRange(new object[] {
             "Avengers",
             "Jhon Wick",
             "Spider-man",
             "Insidious",
             "Son como niños"});
-            this.comboBox1.Location = new System.Drawing.Point(144, 30);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 24);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbPeliculas.Location = new System.Drawing.Point(108, 24);
+            this.cmbPeliculas.Name = "cmbPeliculas";
+            this.cmbPeliculas.Size = new System.Drawing.Size(121, 21);
+            this.cmbPeliculas.TabIndex = 0;
+            this.cmbPeliculas.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(12, 24);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 16);
+            this.label1.Size = new System.Drawing.Size(52, 13);
             this.label1.TabIndex = 1;
             this.label1.Text = "Peliculas ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(85, 498);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(64, 405);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 16);
+            this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 2;
             this.label2.Text = "Fecha";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(85, 587);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(64, 440);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 16);
+            this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 4;
             this.label4.Text = "Asientos ";
             // 
             // a1
             // 
             this.a1.AutoSize = true;
-            this.a1.Location = new System.Drawing.Point(271, 587);
-            this.a1.Margin = new System.Windows.Forms.Padding(4);
+            this.a1.Location = new System.Drawing.Point(203, 440);
             this.a1.Name = "a1";
-            this.a1.Size = new System.Drawing.Size(45, 20);
+            this.a1.Size = new System.Drawing.Size(39, 17);
             this.a1.TabIndex = 5;
             this.a1.Text = "A1";
             this.a1.UseVisualStyleBackColor = true;
+            this.a1.CheckedChanged += new System.EventHandler(this.a1_CheckedChanged);
             // 
             // a2
             // 
             this.a2.AutoSize = true;
-            this.a2.Location = new System.Drawing.Point(432, 587);
-            this.a2.Margin = new System.Windows.Forms.Padding(4);
+            this.a2.Location = new System.Drawing.Point(324, 440);
             this.a2.Name = "a2";
-            this.a2.Size = new System.Drawing.Size(45, 20);
+            this.a2.Size = new System.Drawing.Size(39, 17);
             this.a2.TabIndex = 6;
             this.a2.Text = "A2";
             this.a2.UseVisualStyleBackColor = true;
@@ -125,10 +119,9 @@
             // a3
             // 
             this.a3.AutoSize = true;
-            this.a3.Location = new System.Drawing.Point(593, 586);
-            this.a3.Margin = new System.Windows.Forms.Padding(4);
+            this.a3.Location = new System.Drawing.Point(445, 439);
             this.a3.Name = "a3";
-            this.a3.Size = new System.Drawing.Size(45, 20);
+            this.a3.Size = new System.Drawing.Size(39, 17);
             this.a3.TabIndex = 7;
             this.a3.Text = "A3";
             this.a3.UseVisualStyleBackColor = true;
@@ -136,10 +129,9 @@
             // b1
             // 
             this.b1.AutoSize = true;
-            this.b1.Location = new System.Drawing.Point(271, 633);
-            this.b1.Margin = new System.Windows.Forms.Padding(4);
+            this.b1.Location = new System.Drawing.Point(203, 477);
             this.b1.Name = "b1";
-            this.b1.Size = new System.Drawing.Size(45, 20);
+            this.b1.Size = new System.Drawing.Size(39, 17);
             this.b1.TabIndex = 8;
             this.b1.Text = "B1";
             this.b1.UseVisualStyleBackColor = true;
@@ -147,10 +139,9 @@
             // b2
             // 
             this.b2.AutoSize = true;
-            this.b2.Location = new System.Drawing.Point(432, 633);
-            this.b2.Margin = new System.Windows.Forms.Padding(4);
+            this.b2.Location = new System.Drawing.Point(324, 477);
             this.b2.Name = "b2";
-            this.b2.Size = new System.Drawing.Size(45, 20);
+            this.b2.Size = new System.Drawing.Size(39, 17);
             this.b2.TabIndex = 9;
             this.b2.Text = "B2";
             this.b2.UseVisualStyleBackColor = true;
@@ -158,10 +149,9 @@
             // b3
             // 
             this.b3.AutoSize = true;
-            this.b3.Location = new System.Drawing.Point(593, 633);
-            this.b3.Margin = new System.Windows.Forms.Padding(4);
+            this.b3.Location = new System.Drawing.Point(445, 477);
             this.b3.Name = "b3";
-            this.b3.Size = new System.Drawing.Size(45, 20);
+            this.b3.Size = new System.Drawing.Size(39, 17);
             this.b3.TabIndex = 10;
             this.b3.Text = "B3";
             this.b3.UseVisualStyleBackColor = true;
@@ -169,10 +159,9 @@
             // c1
             // 
             this.c1.AutoSize = true;
-            this.c1.Location = new System.Drawing.Point(271, 674);
-            this.c1.Margin = new System.Windows.Forms.Padding(4);
+            this.c1.Location = new System.Drawing.Point(203, 511);
             this.c1.Name = "c1";
-            this.c1.Size = new System.Drawing.Size(45, 20);
+            this.c1.Size = new System.Drawing.Size(39, 17);
             this.c1.TabIndex = 11;
             this.c1.Text = "C1";
             this.c1.UseVisualStyleBackColor = true;
@@ -180,10 +169,9 @@
             // c2
             // 
             this.c2.AutoSize = true;
-            this.c2.Location = new System.Drawing.Point(432, 674);
-            this.c2.Margin = new System.Windows.Forms.Padding(4);
+            this.c2.Location = new System.Drawing.Point(324, 511);
             this.c2.Name = "c2";
-            this.c2.Size = new System.Drawing.Size(45, 20);
+            this.c2.Size = new System.Drawing.Size(39, 17);
             this.c2.TabIndex = 12;
             this.c2.Text = "C2";
             this.c2.UseVisualStyleBackColor = true;
@@ -191,115 +179,112 @@
             // c3
             // 
             this.c3.AutoSize = true;
-            this.c3.Location = new System.Drawing.Point(593, 674);
-            this.c3.Margin = new System.Windows.Forms.Padding(4);
+            this.c3.Location = new System.Drawing.Point(445, 511);
             this.c3.Name = "c3";
-            this.c3.Size = new System.Drawing.Size(45, 20);
+            this.c3.Size = new System.Drawing.Size(39, 17);
             this.c3.TabIndex = 13;
             this.c3.Text = "C3";
             this.c3.UseVisualStyleBackColor = true;
             this.c3.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(548, 761);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 43);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Comprar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(250, 761);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Location = new System.Drawing.Point(324, 558);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 43);
+            this.button2.Size = new System.Drawing.Size(79, 35);
             this.button2.TabIndex = 15;
             this.button2.Text = "Comida ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // DateTimePicker
+            // dtFecha
             // 
-            this.DateTimePicker.Location = new System.Drawing.Point(204, 492);
-            this.DateTimePicker.Margin = new System.Windows.Forms.Padding(4);
-            this.DateTimePicker.Name = "DateTimePicker";
-            this.DateTimePicker.Size = new System.Drawing.Size(265, 22);
-            this.DateTimePicker.TabIndex = 16;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(41, 92);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(263, 344);
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
+            this.dtFecha.CustomFormat = "yyyy-MM-dd";
+            this.dtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtFecha.Location = new System.Drawing.Point(153, 400);
+            this.dtFecha.Name = "dtFecha";
+            this.dtFecha.Size = new System.Drawing.Size(200, 20);
+            this.dtFecha.TabIndex = 16;
+            this.dtFecha.ValueChanged += new System.EventHandler(this.DateTimePicker_ValueChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(348, 195);
+            this.label3.Location = new System.Drawing.Point(261, 158);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 16);
+            this.label3.Size = new System.Drawing.Size(46, 13);
             this.label3.TabIndex = 19;
             this.label3.Text = "Sinopsis";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(351, 233);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(641, 203);
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(637, 37);
+            this.label7.Location = new System.Drawing.Point(478, 30);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(145, 16);
+            this.label7.Size = new System.Drawing.Size(118, 13);
             this.label7.TabIndex = 24;
             this.label7.Text = "Costo cada entrada: 5$";
             // 
             // subtitulada
             // 
             this.subtitulada.AutoSize = true;
-            this.subtitulada.Location = new System.Drawing.Point(351, 103);
+            this.subtitulada.Location = new System.Drawing.Point(263, 84);
+            this.subtitulada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.subtitulada.Name = "subtitulada";
-            this.subtitulada.Size = new System.Drawing.Size(93, 20);
+            this.subtitulada.Size = new System.Drawing.Size(76, 17);
             this.subtitulada.TabIndex = 25;
             this.subtitulada.TabStop = true;
             this.subtitulada.Text = "subtitulada";
             this.subtitulada.UseVisualStyleBackColor = true;
+            this.subtitulada.CheckedChanged += new System.EventHandler(this.subtitulada_CheckedChanged);
             // 
             // traducida
             // 
             this.traducida.AutoSize = true;
-            this.traducida.Location = new System.Drawing.Point(351, 130);
+            this.traducida.Location = new System.Drawing.Point(263, 106);
+            this.traducida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.traducida.Name = "traducida";
-            this.traducida.Size = new System.Drawing.Size(84, 20);
+            this.traducida.Size = new System.Drawing.Size(69, 17);
             this.traducida.TabIndex = 26;
             this.traducida.TabStop = true;
             this.traducida.Text = "traducida";
             this.traducida.UseVisualStyleBackColor = true;
             // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Location = new System.Drawing.Point(263, 189);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(481, 165);
+            this.pictureBox2.TabIndex = 20;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pbPeliculas
+            // 
+            this.pbPeliculas.Image = global::ProyectoFinal.Properties.Resources.Spider_man;
+            this.pbPeliculas.Location = new System.Drawing.Point(31, 75);
+            this.pbPeliculas.Margin = new System.Windows.Forms.Padding(2);
+            this.pbPeliculas.Name = "pbPeliculas";
+            this.pbPeliculas.Size = new System.Drawing.Size(197, 280);
+            this.pbPeliculas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pbPeliculas.TabIndex = 18;
+            this.pbPeliculas.TabStop = false;
+            // 
             // Boleteria
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 835);
+            this.ClientSize = new System.Drawing.Size(766, 647);
             this.Controls.Add(this.traducida);
             this.Controls.Add(this.subtitulada);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.DateTimePicker);
+            this.Controls.Add(this.pbPeliculas);
+            this.Controls.Add(this.dtFecha);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.c3);
             this.Controls.Add(this.c2);
             this.Controls.Add(this.c1);
@@ -312,12 +297,11 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
+            this.Controls.Add(this.cmbPeliculas);
             this.Name = "Boleteria";
             this.Text = "Boleteria ";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pbPeliculas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,7 +309,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbPeliculas;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
@@ -338,10 +322,9 @@
         private System.Windows.Forms.CheckBox c1;
         private System.Windows.Forms.CheckBox c2;
         private System.Windows.Forms.CheckBox c3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DateTimePicker DateTimePicker;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DateTimePicker dtFecha;
+        private System.Windows.Forms.PictureBox pbPeliculas;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label7;

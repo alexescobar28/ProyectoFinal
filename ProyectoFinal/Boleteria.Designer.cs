@@ -361,6 +361,7 @@
             this.Controls.Add(this.cmbPeliculas);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Boleteria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Boleteria ";
             ((System.ComponentModel.ISupportInitialize)(this.pbPeliculas)).EndInit();
             this.ResumeLayout(false);

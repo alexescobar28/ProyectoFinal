@@ -12,7 +12,7 @@ namespace ProyectoFinal
 {
     public partial class Comida : Form
     {
-        private const bool V = true;
+       
 
         public struct Alimentos
         {
@@ -46,10 +46,7 @@ namespace ProyectoFinal
            
         }
 
-        private ComboBox GetCmbSnack()
-        {
-            return cmbSnack;
-        }
+      
 
         private void cmbSnack_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -158,9 +155,6 @@ namespace ProyectoFinal
             pcbBebida4.Visible = false;
         }
 
-        private void btmSiguiente_Click(object sender, EventArgs e)
-        {
-        }
         public void colocarPrecios()
         {
             if (chkCombo11.Checked == true)

@@ -156,20 +156,20 @@ namespace ProyectoFinal
                 contadorBoletos++;
                 compra.butacas += "B3,";
             }
-            if (b1.Checked == true)
+            if (c1.Checked == true)
             {
                 contadorBoletos++;
-                compra.butacas += "B4,";
+                compra.butacas += "C1,";
             }
-            if (b2.Checked == true)
+            if (c2.Checked == true)
             {
                 contadorBoletos++;
-                compra.butacas += "B5,";
+                compra.butacas += "C2,";
             }
             if (c3.Checked == true)
             {
                 contadorBoletos++;
-                compra.butacas += "B6,";
+                compra.butacas += "C3,";
             }
         }
         public void contarTipo()

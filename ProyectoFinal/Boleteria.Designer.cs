@@ -332,6 +332,7 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbPeliculas);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Boleteria";
             this.Text = "Boleteria ";
             ((System.ComponentModel.ISupportInitialize)(this.pbPeliculas)).EndInit();

@@ -20,6 +20,7 @@ namespace ProyectoFinal
             public string pelicula;
             public string butacas;
             public string fecha;
+            public string hora;
             public int sala;
             public int cantidadAsientos;
             public string comida;
@@ -37,6 +38,7 @@ namespace ProyectoFinal
             lblApellido.Text = informacion.apellido;
             lblPelicula.Text = informacion.pelicula;
             lblFecha.Text = informacion.fecha;
+            lblHora.Text = informacion.hora;
             lblButacas.Text = informacion.butacas;
             lblAsientos.Text=informacion.cantidadAsientos.ToString();
             lblSubtotalEntradas.Text="$"+informacion.subtotalEntradas.ToString();
@@ -52,6 +54,7 @@ namespace ProyectoFinal
             informacion.nombre= Datos.nombre;
             informacion.apellido = Datos.apellido;
             informacion.fecha = Datos.fecha;
+            informacion.hora= Datos.hora;   
             informacion.pelicula = Datos.pelicula;
             informacion.butacas = Datos.butacas;
             informacion.cantidadAsientos = Datos.contadorAsientos;
@@ -62,6 +65,11 @@ namespace ProyectoFinal
             int numero;
             numero=aleatorio.Next(1,11);
             informacion.sala = numero;
+        }
+
+        private void Facturas_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

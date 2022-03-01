@@ -19,6 +19,7 @@ namespace ProyectoFinal
             public double subtotalBoletos;
             public string pelicula;
             public string fecha;
+            public string hora;
             public string tipo;
             public string butacas;
         }
@@ -29,6 +30,8 @@ namespace ProyectoFinal
         public Boleteria()
         {
             InitializeComponent();
+            cmbPeliculas.DropDownStyle = ComboBoxStyle.DropDownList;
+            cmbHora.DropDownStyle = ComboBoxStyle.DropDownList;
             contadorBoletos = 0;
         }
         void contarTipo()
@@ -55,6 +58,7 @@ namespace ProyectoFinal
             Datos.pelicula = compra.pelicula+'-'+compra.tipo;
             Datos.butacas = compra.butacas;
             Datos.fecha =compra.fecha;
+            Datos.hora= compra.hora;
             Datos.contadorAsientos = contadorBoletos;
             Datos.subtotalEntradas = VALOR_ENTRADA * contadorBoletos;
             Comida comida = new Comida();
@@ -70,26 +74,32 @@ namespace ProyectoFinal
             {
                 pbPeliculas.Image = ProyectoFinal.Properties.Resources.Avengers;
                 compra.pelicula = cmbPeliculas.Text;
+                lblSinopsis.Text = "Tras los sucesos de “Vengadores: Infinity War”, los superhéroes que sobrevivieron a Thanos se reunen para poner en práctica un plan definitivo que podría acabar con el villano definitivamente. No saben si funcionará, pero es su única oportunidad de intentarlo. Cuarta entrega de la saga “Vengadores”";
+                
             }
             if (cmbPeliculas.SelectedIndex == 1)
             {
                 pbPeliculas.Image = ProyectoFinal.Properties.Resources.John_Wick;
                 compra.pelicula = cmbPeliculas.Text;
+                lblSinopsis.Text = "En Nueva York, John Wick, un asesino a sueldo retirado, vuelve otra vez a la acción para vengarse de los gángsters que le quitaron todo.";
             }
             if (cmbPeliculas.SelectedIndex == 2)
             {
                 pbPeliculas.Image = ProyectoFinal.Properties.Resources.Spider_man;
                 compra.pelicula = cmbPeliculas.Text;
+                lblSinopsis.Text = "Después de que Mysterio desvelara la identidad de Spider-Man a todo el mundo en Lejos de casa, Peter Parker (Tom Holland), desesperado por volver a la normalidad y recuperar su anterior vida, pide ayuda a Doctor Strange para enmendar tal acción. El Hechicero Supremo de Marvel accede a ayudar al joven Hombre Araña, sin embargo, algo sale mal y el multiverso se convierte en la mayor amenaza hasta el momento.";
             }
             if (cmbPeliculas.SelectedIndex == 3)
             {
                 pbPeliculas.Image = ProyectoFinal.Properties.Resources.Insidious;
                 compra.pelicula = cmbPeliculas.Text;
+                lblSinopsis.Text = "Josh, su esposa Reani y sus tres hijos se mudan a una nueva casa cuando uno de los hijos cae en un estado de coma sin explicación. Poco tiempo después, una sucesión de fenómenos paranormales comienza a producirse. Un medium les dice que el alma de su hijo se encuentra en algún lugar entre la vida y la muerte en la dimensió...";
             }
             if (cmbPeliculas.SelectedIndex == 4)
             {
                 pbPeliculas.Image = ProyectoFinal.Properties.Resources.Son_como_niños;
                 compra.pelicula = cmbPeliculas.Text;
+                lblSinopsis.Text = "La muerte del entrenador de baloncesto de su infancia lleva a una reunión de viejos amigos (Adam Sandler, Kevin James, Chris Rock), que se reúnen en el lugar de la celebración de un campeonato años antes. Continuando donde lo dejaron, los amigos, con esposas e hijos a cuestas, descubren por qué la edad no es necesariamente igual a la madurez. ";
             }
 
 
@@ -178,6 +188,48 @@ namespace ProyectoFinal
                 contadorBoletos++;
                 compra.butacas += "B6,";
             }
+        }
+
+        private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
+        {
+            if (cmbPeliculas.SelectedIndex == 0)
+            {
+                compra.hora = "11:00";
+
+            }
+            if (cmbPeliculas.SelectedIndex == 1)
+            {
+                compra.hora = "13:00";
+
+            }
+            if (cmbPeliculas.SelectedIndex == 2)
+            {
+                compra.hora = "15:00";
+
+            }
+            if (cmbPeliculas.SelectedIndex == 0)
+            {
+                compra.hora = "17:00";
+
+            }
+            if (cmbPeliculas.SelectedIndex == 0)
+            {
+                compra.hora = "19:00";
+
+            }
+            if (cmbPeliculas.SelectedIndex == 0)
+            {
+                compra.hora = "21:00";
+
+            }
+            if (cmbPeliculas.SelectedIndex == 0)
+            {
+                compra.hora = "23:00";
+
+            }
+
+
+
         }
     }
 }

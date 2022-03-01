@@ -16,8 +16,8 @@ namespace ProyectoFinal
 
         public struct Alimentos
         {
-            public String snack;
-            public String bebida;
+            public string snack;
+            public string bebida;
             public String combos;
             public double subTotal;
         }
@@ -26,7 +26,10 @@ namespace ProyectoFinal
         
         public Comida()
         {
+            
             InitializeComponent();
+            alimentos.snack = "Ninguno";
+            alimentos.bebida = "Ninguno";
             cmbSnack.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbBebidas.DropDownStyle = ComboBoxStyle.DropDownList;
          
@@ -112,10 +115,7 @@ namespace ProyectoFinal
 
         private void cmbBebidas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbBebidas.SelectedIndex == -1)
-            {
-                alimentos.bebida = "Ninguna";
-            }
+           
             if (cmbBebidas.SelectedIndex == 0)
             {
                 pcbBebida1.Visible = true;
@@ -152,15 +152,7 @@ namespace ProyectoFinal
                 alimentos.bebida = "NesTea";
                 alimentos.subTotal += 1;
             }
-            if (cmbBebidas.SelectedIndex == 4)
-            {
-                alimentos.bebida = "Ninguna";
-                pcbBebida1.Visible = false;
-                pcbBebida2.Visible = false;
-                pcbBebida3.Visible = false;
-                pcbBebida4.Visible = false;
-
-            }
+           
         }
 
         private void Comida_Load(object sender, EventArgs e)
@@ -198,7 +190,7 @@ namespace ProyectoFinal
             }
             if (chkCombo11.Checked == false && chkCombo2.Checked == false && chkCombo3.Checked == false)
             {
-                alimentos.combos += "Ninguno";
+                alimentos.combos += "Ningun COMBO";
             }
         }
     }

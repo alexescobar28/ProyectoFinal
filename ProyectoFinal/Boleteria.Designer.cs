@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Boleteria));
             this.cmbPeliculas = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -47,14 +48,16 @@
             this.label7 = new System.Windows.Forms.Label();
             this.subtitulada = new System.Windows.Forms.RadioButton();
             this.traducida = new System.Windows.Forms.RadioButton();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pbPeliculas = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.lblSinopsis = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmbHora = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.pbPeliculas)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbPeliculas
             // 
+            this.cmbPeliculas.Cursor = System.Windows.Forms.Cursors.Default;
             this.cmbPeliculas.FormattingEnabled = true;
             this.cmbPeliculas.Items.AddRange(new object[] {
             "Avengers",
@@ -66,6 +69,7 @@
             this.cmbPeliculas.Name = "cmbPeliculas";
             this.cmbPeliculas.Size = new System.Drawing.Size(121, 21);
             this.cmbPeliculas.TabIndex = 0;
+            this.cmbPeliculas.Text = "Spider-man";
             this.cmbPeliculas.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
@@ -80,7 +84,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(64, 405);
+            this.label2.Location = new System.Drawing.Point(446, 89);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 2;
@@ -89,7 +93,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(64, 440);
+            this.label4.Location = new System.Drawing.Point(260, 263);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 4;
@@ -98,7 +102,7 @@
             // a1
             // 
             this.a1.AutoSize = true;
-            this.a1.Location = new System.Drawing.Point(203, 440);
+            this.a1.Location = new System.Drawing.Point(399, 263);
             this.a1.Name = "a1";
             this.a1.Size = new System.Drawing.Size(39, 17);
             this.a1.TabIndex = 5;
@@ -109,7 +113,7 @@
             // a2
             // 
             this.a2.AutoSize = true;
-            this.a2.Location = new System.Drawing.Point(324, 440);
+            this.a2.Location = new System.Drawing.Point(520, 263);
             this.a2.Name = "a2";
             this.a2.Size = new System.Drawing.Size(39, 17);
             this.a2.TabIndex = 6;
@@ -119,7 +123,7 @@
             // a3
             // 
             this.a3.AutoSize = true;
-            this.a3.Location = new System.Drawing.Point(445, 439);
+            this.a3.Location = new System.Drawing.Point(641, 262);
             this.a3.Name = "a3";
             this.a3.Size = new System.Drawing.Size(39, 17);
             this.a3.TabIndex = 7;
@@ -129,7 +133,7 @@
             // b1
             // 
             this.b1.AutoSize = true;
-            this.b1.Location = new System.Drawing.Point(203, 477);
+            this.b1.Location = new System.Drawing.Point(399, 300);
             this.b1.Name = "b1";
             this.b1.Size = new System.Drawing.Size(39, 17);
             this.b1.TabIndex = 8;
@@ -139,7 +143,7 @@
             // b2
             // 
             this.b2.AutoSize = true;
-            this.b2.Location = new System.Drawing.Point(324, 477);
+            this.b2.Location = new System.Drawing.Point(520, 300);
             this.b2.Name = "b2";
             this.b2.Size = new System.Drawing.Size(39, 17);
             this.b2.TabIndex = 9;
@@ -149,7 +153,7 @@
             // b3
             // 
             this.b3.AutoSize = true;
-            this.b3.Location = new System.Drawing.Point(445, 477);
+            this.b3.Location = new System.Drawing.Point(641, 300);
             this.b3.Name = "b3";
             this.b3.Size = new System.Drawing.Size(39, 17);
             this.b3.TabIndex = 10;
@@ -159,7 +163,7 @@
             // c1
             // 
             this.c1.AutoSize = true;
-            this.c1.Location = new System.Drawing.Point(203, 511);
+            this.c1.Location = new System.Drawing.Point(399, 334);
             this.c1.Name = "c1";
             this.c1.Size = new System.Drawing.Size(39, 17);
             this.c1.TabIndex = 11;
@@ -169,7 +173,7 @@
             // c2
             // 
             this.c2.AutoSize = true;
-            this.c2.Location = new System.Drawing.Point(324, 511);
+            this.c2.Location = new System.Drawing.Point(520, 334);
             this.c2.Name = "c2";
             this.c2.Size = new System.Drawing.Size(39, 17);
             this.c2.TabIndex = 12;
@@ -179,7 +183,7 @@
             // c3
             // 
             this.c3.AutoSize = true;
-            this.c3.Location = new System.Drawing.Point(445, 511);
+            this.c3.Location = new System.Drawing.Point(641, 334);
             this.c3.Name = "c3";
             this.c3.Size = new System.Drawing.Size(39, 17);
             this.c3.TabIndex = 13;
@@ -189,7 +193,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(324, 558);
+            this.button2.Location = new System.Drawing.Point(520, 381);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(79, 35);
             this.button2.TabIndex = 15;
@@ -201,7 +205,7 @@
             // 
             this.dtFecha.CustomFormat = "yyyy-MM-dd";
             this.dtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dtFecha.Location = new System.Drawing.Point(153, 400);
+            this.dtFecha.Location = new System.Drawing.Point(535, 84);
             this.dtFecha.Name = "dtFecha";
             this.dtFecha.Size = new System.Drawing.Size(200, 20);
             this.dtFecha.TabIndex = 16;
@@ -210,20 +214,22 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(261, 158);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 13);
+            this.label3.Size = new System.Drawing.Size(54, 13);
             this.label3.TabIndex = 19;
             this.label3.Text = "Sinopsis";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(478, 30);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(442, 32);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(118, 13);
+            this.label7.Size = new System.Drawing.Size(167, 16);
             this.label7.TabIndex = 24;
             this.label7.Text = "Costo cada entrada: 5$";
             // 
@@ -252,15 +258,6 @@
             this.traducida.Text = "traducida";
             this.traducida.UseVisualStyleBackColor = true;
             // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(263, 189);
-            this.pictureBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(481, 165);
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
-            // 
             // pbPeliculas
             // 
             this.pbPeliculas.Image = global::ProyectoFinal.Properties.Resources.Spider_man;
@@ -272,15 +269,52 @@
             this.pbPeliculas.TabIndex = 18;
             this.pbPeliculas.TabStop = false;
             // 
+            // lblSinopsis
+            // 
+            this.lblSinopsis.Location = new System.Drawing.Point(261, 184);
+            this.lblSinopsis.Name = "lblSinopsis";
+            this.lblSinopsis.Size = new System.Drawing.Size(474, 61);
+            this.lblSinopsis.TabIndex = 27;
+            this.lblSinopsis.Text = resources.GetString("lblSinopsis.Text");
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(448, 129);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(33, 13);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Hora:";
+            // 
+            // cmbHora
+            // 
+            this.cmbHora.FormattingEnabled = true;
+            this.cmbHora.Items.AddRange(new object[] {
+            "11:00",
+            "13:00",
+            "15:00",
+            "17:00",
+            "19:00",
+            "21:00",
+            "23:00"});
+            this.cmbHora.Location = new System.Drawing.Point(535, 121);
+            this.cmbHora.Name = "cmbHora";
+            this.cmbHora.Size = new System.Drawing.Size(121, 21);
+            this.cmbHora.TabIndex = 29;
+            this.cmbHora.Text = "11:00";
+            this.cmbHora.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            // 
             // Boleteria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(766, 647);
+            this.ClientSize = new System.Drawing.Size(761, 432);
+            this.Controls.Add(this.cmbHora);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblSinopsis);
             this.Controls.Add(this.traducida);
             this.Controls.Add(this.subtitulada);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.pbPeliculas);
             this.Controls.Add(this.dtFecha);
@@ -300,7 +334,6 @@
             this.Controls.Add(this.cmbPeliculas);
             this.Name = "Boleteria";
             this.Text = "Boleteria ";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pbPeliculas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -326,9 +359,11 @@
         private System.Windows.Forms.DateTimePicker dtFecha;
         private System.Windows.Forms.PictureBox pbPeliculas;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.RadioButton subtitulada;
         private System.Windows.Forms.RadioButton traducida;
+        private System.Windows.Forms.Label lblSinopsis;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cmbHora;
     }
 }

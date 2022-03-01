@@ -169,7 +169,6 @@
             this.chkCombo3.Size = new System.Drawing.Size(107, 69);
             this.chkCombo3.TabIndex = 10;
             this.chkCombo3.Text = "Hot - Dog\r\nBebida Pequeña\r\nCanguil Pequeño\r\nJONNY\'S\r\n$7";
-            this.chkCombo3.ThreeState = true;
             this.chkCombo3.UseVisualStyleBackColor = true;
             // 
             // btmCalcular

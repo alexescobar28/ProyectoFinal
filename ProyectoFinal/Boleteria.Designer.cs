@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal
 {
-    partial class Boleteria
+    partial class frmBoleteria
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBoleteria));
+            this.cmbPeliculas = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
@@ -41,72 +42,74 @@
             this.c1 = new System.Windows.Forms.CheckBox();
             this.c2 = new System.Windows.Forms.CheckBox();
             this.c3 = new System.Windows.Forms.CheckBox();
-            this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
-            this.DateTimePicker = new System.Windows.Forms.DateTimePicker();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.dtFecha = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.subtitulada = new System.Windows.Forms.RadioButton();
-            this.traducida = new System.Windows.Forms.RadioButton();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            this.rdSubtitulada = new System.Windows.Forms.RadioButton();
+            this.rdTraducida = new System.Windows.Forms.RadioButton();
+            this.pcbPeliculas = new System.Windows.Forms.PictureBox();
+            this.lblSinopsis = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.cmbHora = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPeliculas)).BeginInit();
             this.SuspendLayout();
             // 
-            // comboBox1
+            // cmbPeliculas
             // 
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.cmbPeliculas.Cursor = System.Windows.Forms.Cursors.Default;
+            this.cmbPeliculas.FormattingEnabled = true;
+            this.cmbPeliculas.Items.AddRange(new object[] {
             "Avengers",
             "Jhon Wick",
-            "Spider-man",
+            "Spiderman",
             "Insidious",
             "Son como niños"});
-            this.comboBox1.Location = new System.Drawing.Point(144, 30);
-            this.comboBox1.Margin = new System.Windows.Forms.Padding(4);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(160, 24);
-            this.comboBox1.TabIndex = 0;
-            this.comboBox1.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
+            this.cmbPeliculas.Location = new System.Drawing.Point(117, 43);
+            this.cmbPeliculas.Name = "cmbPeliculas";
+            this.cmbPeliculas.Size = new System.Drawing.Size(121, 21);
+            this.cmbPeliculas.TabIndex = 0;
+            this.cmbPeliculas.Text = "Spiderman";
+            this.cmbPeliculas.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(16, 30);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(28, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(65, 16);
+            this.label1.Size = new System.Drawing.Size(75, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Peliculas ";
+            this.label1.Text = "Películas ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(85, 498);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(446, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(45, 16);
+            this.label2.Size = new System.Drawing.Size(50, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Fecha";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(85, 587);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(260, 263);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(62, 16);
+            this.label4.Size = new System.Drawing.Size(71, 16);
             this.label4.TabIndex = 4;
             this.label4.Text = "Asientos ";
             // 
             // a1
             // 
             this.a1.AutoSize = true;
-            this.a1.Location = new System.Drawing.Point(271, 587);
-            this.a1.Margin = new System.Windows.Forms.Padding(4);
+            this.a1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.a1.Location = new System.Drawing.Point(399, 263);
             this.a1.Name = "a1";
-            this.a1.Size = new System.Drawing.Size(45, 20);
+            this.a1.Size = new System.Drawing.Size(42, 20);
             this.a1.TabIndex = 5;
             this.a1.Text = "A1";
             this.a1.UseVisualStyleBackColor = true;
@@ -114,10 +117,10 @@
             // a2
             // 
             this.a2.AutoSize = true;
-            this.a2.Location = new System.Drawing.Point(432, 587);
-            this.a2.Margin = new System.Windows.Forms.Padding(4);
+            this.a2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.a2.Location = new System.Drawing.Point(520, 263);
             this.a2.Name = "a2";
-            this.a2.Size = new System.Drawing.Size(45, 20);
+            this.a2.Size = new System.Drawing.Size(42, 20);
             this.a2.TabIndex = 6;
             this.a2.Text = "A2";
             this.a2.UseVisualStyleBackColor = true;
@@ -125,10 +128,10 @@
             // a3
             // 
             this.a3.AutoSize = true;
-            this.a3.Location = new System.Drawing.Point(593, 586);
-            this.a3.Margin = new System.Windows.Forms.Padding(4);
+            this.a3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.a3.Location = new System.Drawing.Point(641, 262);
             this.a3.Name = "a3";
-            this.a3.Size = new System.Drawing.Size(45, 20);
+            this.a3.Size = new System.Drawing.Size(42, 20);
             this.a3.TabIndex = 7;
             this.a3.Text = "A3";
             this.a3.UseVisualStyleBackColor = true;
@@ -136,10 +139,10 @@
             // b1
             // 
             this.b1.AutoSize = true;
-            this.b1.Location = new System.Drawing.Point(271, 633);
-            this.b1.Margin = new System.Windows.Forms.Padding(4);
+            this.b1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b1.Location = new System.Drawing.Point(399, 300);
             this.b1.Name = "b1";
-            this.b1.Size = new System.Drawing.Size(45, 20);
+            this.b1.Size = new System.Drawing.Size(42, 20);
             this.b1.TabIndex = 8;
             this.b1.Text = "B1";
             this.b1.UseVisualStyleBackColor = true;
@@ -147,10 +150,10 @@
             // b2
             // 
             this.b2.AutoSize = true;
-            this.b2.Location = new System.Drawing.Point(432, 633);
-            this.b2.Margin = new System.Windows.Forms.Padding(4);
+            this.b2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b2.Location = new System.Drawing.Point(520, 300);
             this.b2.Name = "b2";
-            this.b2.Size = new System.Drawing.Size(45, 20);
+            this.b2.Size = new System.Drawing.Size(42, 20);
             this.b2.TabIndex = 9;
             this.b2.Text = "B2";
             this.b2.UseVisualStyleBackColor = true;
@@ -158,10 +161,10 @@
             // b3
             // 
             this.b3.AutoSize = true;
-            this.b3.Location = new System.Drawing.Point(593, 633);
-            this.b3.Margin = new System.Windows.Forms.Padding(4);
+            this.b3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.b3.Location = new System.Drawing.Point(641, 300);
             this.b3.Name = "b3";
-            this.b3.Size = new System.Drawing.Size(45, 20);
+            this.b3.Size = new System.Drawing.Size(42, 20);
             this.b3.TabIndex = 10;
             this.b3.Text = "B3";
             this.b3.UseVisualStyleBackColor = true;
@@ -169,10 +172,10 @@
             // c1
             // 
             this.c1.AutoSize = true;
-            this.c1.Location = new System.Drawing.Point(271, 674);
-            this.c1.Margin = new System.Windows.Forms.Padding(4);
+            this.c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c1.Location = new System.Drawing.Point(399, 334);
             this.c1.Name = "c1";
-            this.c1.Size = new System.Drawing.Size(45, 20);
+            this.c1.Size = new System.Drawing.Size(42, 20);
             this.c1.TabIndex = 11;
             this.c1.Text = "C1";
             this.c1.UseVisualStyleBackColor = true;
@@ -180,10 +183,10 @@
             // c2
             // 
             this.c2.AutoSize = true;
-            this.c2.Location = new System.Drawing.Point(432, 674);
-            this.c2.Margin = new System.Windows.Forms.Padding(4);
+            this.c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c2.Location = new System.Drawing.Point(520, 334);
             this.c2.Name = "c2";
-            this.c2.Size = new System.Drawing.Size(45, 20);
+            this.c2.Size = new System.Drawing.Size(42, 20);
             this.c2.TabIndex = 12;
             this.c2.Text = "C2";
             this.c2.UseVisualStyleBackColor = true;
@@ -191,115 +194,158 @@
             // c3
             // 
             this.c3.AutoSize = true;
-            this.c3.Location = new System.Drawing.Point(593, 674);
-            this.c3.Margin = new System.Windows.Forms.Padding(4);
+            this.c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.c3.Location = new System.Drawing.Point(641, 334);
             this.c3.Name = "c3";
-            this.c3.Size = new System.Drawing.Size(45, 20);
+            this.c3.Size = new System.Drawing.Size(42, 20);
             this.c3.TabIndex = 13;
             this.c3.Text = "C3";
             this.c3.UseVisualStyleBackColor = true;
-            this.c3.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(548, 761);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(111, 43);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Comprar";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(250, 761);
-            this.button2.Margin = new System.Windows.Forms.Padding(4);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(492, 360);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(105, 43);
+            this.button2.Size = new System.Drawing.Size(79, 35);
             this.button2.TabIndex = 15;
             this.button2.Text = "Comida ";
             this.button2.UseVisualStyleBackColor = true;
             this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
-            // DateTimePicker
+            // dtFecha
             // 
-            this.DateTimePicker.Location = new System.Drawing.Point(204, 492);
-            this.DateTimePicker.Margin = new System.Windows.Forms.Padding(4);
-            this.DateTimePicker.Name = "DateTimePicker";
-            this.DateTimePicker.Size = new System.Drawing.Size(265, 22);
-            this.DateTimePicker.TabIndex = 16;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(41, 92);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(263, 344);
-            this.pictureBox1.TabIndex = 18;
-            this.pictureBox1.TabStop = false;
+            this.dtFecha.CustomFormat = "yyyy-MM-dd";
+            this.dtFecha.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dtFecha.Location = new System.Drawing.Point(535, 84);
+            this.dtFecha.Name = "dtFecha";
+            this.dtFecha.Size = new System.Drawing.Size(200, 20);
+            this.dtFecha.TabIndex = 16;
+            this.dtFecha.ValueChanged += new System.EventHandler(this.DateTimePicker_ValueChanged);
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(348, 195);
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(261, 158);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(59, 16);
+            this.label3.Size = new System.Drawing.Size(67, 16);
             this.label3.TabIndex = 19;
             this.label3.Text = "Sinopsis";
-            // 
-            // pictureBox2
-            // 
-            this.pictureBox2.Location = new System.Drawing.Point(351, 233);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(641, 203);
-            this.pictureBox2.TabIndex = 20;
-            this.pictureBox2.TabStop = false;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(637, 37);
+            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label7.Location = new System.Drawing.Point(446, 48);
+            this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(145, 16);
+            this.label7.Size = new System.Drawing.Size(167, 16);
             this.label7.TabIndex = 24;
-            this.label7.Text = "Costo cada entrada: 5$";
+            this.label7.Text = "Costo cada entrada: $5";
             // 
-            // subtitulada
+            // rdSubtitulada
             // 
-            this.subtitulada.AutoSize = true;
-            this.subtitulada.Location = new System.Drawing.Point(351, 103);
-            this.subtitulada.Name = "subtitulada";
-            this.subtitulada.Size = new System.Drawing.Size(93, 20);
-            this.subtitulada.TabIndex = 25;
-            this.subtitulada.TabStop = true;
-            this.subtitulada.Text = "subtitulada";
-            this.subtitulada.UseVisualStyleBackColor = true;
+            this.rdSubtitulada.AutoSize = true;
+            this.rdSubtitulada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdSubtitulada.Location = new System.Drawing.Point(263, 84);
+            this.rdSubtitulada.Margin = new System.Windows.Forms.Padding(2);
+            this.rdSubtitulada.Name = "rdSubtitulada";
+            this.rdSubtitulada.Size = new System.Drawing.Size(92, 20);
+            this.rdSubtitulada.TabIndex = 25;
+            this.rdSubtitulada.TabStop = true;
+            this.rdSubtitulada.Text = "Subtitulada";
+            this.rdSubtitulada.UseVisualStyleBackColor = true;
             // 
-            // traducida
+            // rdTraducida
             // 
-            this.traducida.AutoSize = true;
-            this.traducida.Location = new System.Drawing.Point(351, 130);
-            this.traducida.Name = "traducida";
-            this.traducida.Size = new System.Drawing.Size(84, 20);
-            this.traducida.TabIndex = 26;
-            this.traducida.TabStop = true;
-            this.traducida.Text = "traducida";
-            this.traducida.UseVisualStyleBackColor = true;
+            this.rdTraducida.AutoSize = true;
+            this.rdTraducida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdTraducida.Location = new System.Drawing.Point(263, 106);
+            this.rdTraducida.Margin = new System.Windows.Forms.Padding(2);
+            this.rdTraducida.Name = "rdTraducida";
+            this.rdTraducida.Size = new System.Drawing.Size(87, 20);
+            this.rdTraducida.TabIndex = 26;
+            this.rdTraducida.TabStop = true;
+            this.rdTraducida.Text = "Traducida";
+            this.rdTraducida.UseVisualStyleBackColor = true;
             // 
-            // Boleteria
+            // pcbPeliculas
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.pcbPeliculas.Image = global::ProyectoFinal.Properties.Resources.Spider_man;
+            this.pcbPeliculas.Location = new System.Drawing.Point(31, 75);
+            this.pcbPeliculas.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbPeliculas.Name = "pcbPeliculas";
+            this.pcbPeliculas.Size = new System.Drawing.Size(197, 280);
+            this.pcbPeliculas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbPeliculas.TabIndex = 18;
+            this.pcbPeliculas.TabStop = false;
+            // 
+            // lblSinopsis
+            // 
+            this.lblSinopsis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblSinopsis.Location = new System.Drawing.Point(261, 184);
+            this.lblSinopsis.Name = "lblSinopsis";
+            this.lblSinopsis.Size = new System.Drawing.Size(474, 61);
+            this.lblSinopsis.TabIndex = 27;
+            this.lblSinopsis.Text = resources.GetString("lblSinopsis.Text");
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(448, 129);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(45, 16);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Hora:";
+            // 
+            // cmbHora
+            // 
+            this.cmbHora.FormattingEnabled = true;
+            this.cmbHora.Items.AddRange(new object[] {
+            "11:00",
+            "13:00",
+            "15:00",
+            "17:00",
+            "19:00",
+            "21:00",
+            "23:00"});
+            this.cmbHora.Location = new System.Drawing.Point(535, 121);
+            this.cmbHora.Name = "cmbHora";
+            this.cmbHora.Size = new System.Drawing.Size(121, 21);
+            this.cmbHora.TabIndex = 29;
+            this.cmbHora.Text = "11:00";
+            this.cmbHora.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(308, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(124, 24);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "BOLETERIA";
+            // 
+            // frmBoleteria
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1004, 835);
-            this.Controls.Add(this.traducida);
-            this.Controls.Add(this.subtitulada);
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ClientSize = new System.Drawing.Size(747, 406);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.cmbHora);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.lblSinopsis);
+            this.Controls.Add(this.rdTraducida);
+            this.Controls.Add(this.rdSubtitulada);
             this.Controls.Add(this.label7);
-            this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.DateTimePicker);
+            this.Controls.Add(this.pcbPeliculas);
+            this.Controls.Add(this.dtFecha);
             this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.c3);
             this.Controls.Add(this.c2);
             this.Controls.Add(this.c1);
@@ -312,12 +358,14 @@
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.comboBox1);
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Boleteria";
+            this.Controls.Add(this.cmbPeliculas);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
+            this.Name = "frmBoleteria";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Boleteria ";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPeliculas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -325,7 +373,7 @@
 
         #endregion
 
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox cmbPeliculas;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label4;
@@ -338,14 +386,16 @@
         private System.Windows.Forms.CheckBox c1;
         private System.Windows.Forms.CheckBox c2;
         private System.Windows.Forms.CheckBox c3;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DateTimePicker DateTimePicker;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.DateTimePicker dtFecha;
+        private System.Windows.Forms.PictureBox pcbPeliculas;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RadioButton subtitulada;
-        private System.Windows.Forms.RadioButton traducida;
+        private System.Windows.Forms.RadioButton rdSubtitulada;
+        private System.Windows.Forms.RadioButton rdTraducida;
+        private System.Windows.Forms.Label lblSinopsis;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.ComboBox cmbHora;
+        private System.Windows.Forms.Label label6;
     }
 }

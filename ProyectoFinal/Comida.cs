@@ -10,47 +10,43 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class Comida : Form
+    public partial class frmComida : Form
     {
-        private const bool V = true;
+       
 
         public struct Alimentos
         {
-            public String snack;
-            public String bebida;
-            public String combos;
+            public string snack;
+            public string bebida;
+            public string combos;
             public double subTotal;
         }
         static public Alimentos alimentos;
 
         
-        public Comida()
+        public frmComida()
         {
+            
             InitializeComponent();
+            alimentos.snack = "Ninguno";//por defecto en factura ninguno
+            alimentos.bebida = "Ninguno";//por defecto en factura ninguno
             cmbSnack.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbBebidas.DropDownStyle = ComboBoxStyle.DropDownList;
          
         }
 
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chkCombo2_CheckedChanged(object sender, EventArgs e)
-        {
-         
-        }
-
         private void btmCalcular_Click(object sender, EventArgs e)
         {
-
+            ColocarPrecios();
+            Datos.comida=alimentos.combos+"\nSnack:"+alimentos.snack + "\nBebida:"+alimentos.bebida;
+            Datos.subtotalComidas = alimentos.subTotal;
+            frmFacturas facturas = new frmFacturas();
+            this.Hide();
+            facturas.Show();
+           
         }
 
-        private ComboBox GetCmbSnack()
-        {
-            return cmbSnack;
-        }
+      
 
         private void cmbSnack_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -61,24 +57,36 @@ namespace ProyectoFinal
             if (cmbSnack.SelectedIndex == 0)
             {
                 pcbSnack1.Visible = true;
+                pcbSnack2.Visible = false;
+                pcbSnack3.Visible = false;
+                pcbSnack4.Visible = false;
                 alimentos.snack = "Manicho";
                 alimentos.subTotal = 1;
             }
             if (cmbSnack.SelectedIndex == 1)
             {
                 pcbSnack2.Visible = true;
+                pcbSnack1.Visible = false;
+                pcbSnack3.Visible = false;
+                pcbSnack4.Visible = false;
                 alimentos.snack = "Nachos con queso";
                 alimentos.subTotal = 2.50;
             }
             if (cmbSnack.SelectedIndex == 2)
             {
                 pcbSnack3.Visible = true;
+                pcbSnack1.Visible = false;
+                pcbSnack2.Visible = false;
+                pcbSnack4.Visible = false;
                 alimentos.snack = "Tango";
                 alimentos.subTotal = 0.50;
             }
             if (cmbSnack.SelectedIndex == 3)
             {
                 pcbSnack4.Visible = true;
+                pcbSnack2.Visible = false;
+                pcbSnack3.Visible = false;
+                pcbSnack1.Visible = false;
                 alimentos.snack = "Hot Dog";
                 alimentos.subTotal = 2.5;
             }
@@ -94,43 +102,44 @@ namespace ProyectoFinal
 
         private void cmbBebidas_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if (cmbBebidas.SelectedIndex == -1)
-            {
-                alimentos.bebida = "Ninguna";
-            }
+           
             if (cmbBebidas.SelectedIndex == 0)
             {
                 pcbBebida1.Visible = true;
+                pcbBebida2.Visible = false;
+                pcbBebida3.Visible = false;
+                pcbBebida4.Visible = false;
                 alimentos.bebida = "Pepsi";
                 alimentos.subTotal += 1 ;
             }
             if (cmbBebidas.SelectedIndex == 1)
             {
                 pcbBebida2.Visible = true;
+                pcbBebida1.Visible = false;
+                pcbBebida3.Visible = false;
+                pcbBebida4.Visible = false;
                 alimentos.bebida = "7 Up";
                 alimentos.subTotal += 1;
             }
             if (cmbBebidas.SelectedIndex == 2)
             {
                 pcbBebida3.Visible = true;
+                pcbBebida2.Visible = false;
+                pcbBebida1.Visible = false;
+                pcbBebida4.Visible = false;
                 alimentos.bebida = "Granizado";
                 alimentos.subTotal += 2;
             }
             if (cmbBebidas.SelectedIndex == 3)
             {
                 pcbBebida4.Visible = true;
+                pcbBebida2.Visible = false;
+                pcbBebida3.Visible = false;
+                pcbBebida1.Visible = false;
                 alimentos.bebida = "NesTea";
                 alimentos.subTotal += 1;
             }
-            if (cmbBebidas.SelectedIndex == 4)
-            {
-                alimentos.bebida = "Ninguna";
-                pcbBebida1.Visible = false;
-                pcbBebida2.Visible = false;
-                pcbBebida3.Visible = false;
-                pcbBebida4.Visible = false;
-
-            }
+           
         }
 
         private void Comida_Load(object sender, EventArgs e)
@@ -146,11 +155,8 @@ namespace ProyectoFinal
             pcbBebida4.Visible = false;
         }
 
-        private void btmSiguiente_Click(object sender, EventArgs e)
+        public void ColocarPrecios()
         {
-            Facturas facturas = new Facturas();
-            this.Hide();
-            facturas.Show();
             if (chkCombo11.Checked == true)
             {
                 alimentos.combos += "-Combo1-";
@@ -168,7 +174,7 @@ namespace ProyectoFinal
             }
             if (chkCombo11.Checked == false && chkCombo2.Checked == false && chkCombo3.Checked == false)
             {
-                alimentos.combos += "Ninguno";
+                alimentos.combos += "Ningun COMBO";
             }
         }
     }

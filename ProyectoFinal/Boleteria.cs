@@ -51,19 +51,27 @@ namespace ProyectoFinal
         {
             contarTipo();
             asignarAsientos();
+            if (compra.butacas==null || compra.tipo == "")
+            {
+                MessageBox.Show("Preocure llenar todos los campos ", "Error ingreso", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-            compra.cantidad = contadorBoletos;
-            compra.subtotalBoletos = compra.cantidad * 5;
-            compra.fecha =dtFecha.Text;
-            Datos.pelicula = compra.pelicula+'-'+compra.tipo;
-            Datos.butacas = compra.butacas;
-            Datos.fecha =compra.fecha;
-            Datos.hora= compra.hora;
-            Datos.contadorAsientos = contadorBoletos;
-            Datos.subtotalEntradas = VALOR_ENTRADA * contadorBoletos;
-            Comida comida = new Comida();
-            this.Hide();
-            comida.Show();
+            }
+            else
+            {
+                compra.cantidad = contadorBoletos;
+                compra.subtotalBoletos = compra.cantidad * 5;
+                compra.fecha = dtFecha.Text;
+                Datos.pelicula = compra.pelicula + '-' + compra.tipo;
+                Datos.butacas = compra.butacas;
+                Datos.fecha = compra.fecha;
+                Datos.hora = compra.hora;
+                Datos.contadorAsientos = contadorBoletos;
+                Datos.subtotalEntradas = VALOR_ENTRADA * contadorBoletos;
+                Comida comida = new Comida();
+                this.Hide();
+                comida.Show();
+            }
+            
             
         }
 

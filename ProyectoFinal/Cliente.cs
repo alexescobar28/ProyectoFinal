@@ -30,12 +30,20 @@ namespace ProyectoFinal
             persona.nombre = txtNombre.Text;
             persona.apellido = txtApellido.Text;
             persona.cedula = txtCedula.Text;
-            Datos.CI = persona.cedula;
-            Datos.nombre = persona.nombre;
-            Datos.apellido = persona.apellido;
-            Boleteria boleteria = new Boleteria();
+            if (persona.nombre == "")
+            {
+                MessageBox.Show("error llene todos los datos por favor ","Error ingreso",MessageBoxButtons.OK,MessageBoxIcon.Error);
+            }
+            else
+            {
+                Datos.CI = persona.cedula;
+                Datos.nombre = persona.nombre;
+                Datos.apellido = persona.apellido;
+                Boleteria boleteria = new Boleteria();
                 this.Hide();
                 boleteria.Show();
+            }
+            
             
         }
 

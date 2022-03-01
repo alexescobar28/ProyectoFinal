@@ -74,7 +74,7 @@
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(43, 13);
             this.label4.TabIndex = 3;
-            this.label4.Text = "Cedula ";
+            this.label4.Text = "Cédula ";
             // 
             // txtCedula
             // 
@@ -125,6 +125,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Cliente";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Clientes ";
             this.ResumeLayout(false);
             this.PerformLayout();

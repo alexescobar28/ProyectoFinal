@@ -84,9 +84,10 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(318, 9);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(285, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(42, 13);
+            this.label1.Size = new System.Drawing.Size(103, 29);
             this.label1.TabIndex = 0;
             this.label1.Text = "Comida";
             // 
@@ -99,7 +100,6 @@
             this.label2.Size = new System.Drawing.Size(62, 16);
             this.label2.TabIndex = 3;
             this.label2.Text = "Snacks:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label3
             // 
@@ -158,9 +158,8 @@
             this.chkCombo2.Name = "chkCombo2";
             this.chkCombo2.Size = new System.Drawing.Size(124, 69);
             this.chkCombo2.TabIndex = 9;
-            this.chkCombo2.Text = "Canguil mediano\r\n2 Bebidas Pequeñas\r\nNochos Pequeños\r\nHot - Dog \r\n$10";
+            this.chkCombo2.Text = "Canguil mediano\r\n2 Bebidas Pequeñas\r\nNachos Pequeños\r\nHot - Dog \r\n$10";
             this.chkCombo2.UseVisualStyleBackColor = true;
-            this.chkCombo2.CheckedChanged += new System.EventHandler(this.chkCombo2_CheckedChanged);
             // 
             // chkCombo3
             // 
@@ -368,6 +367,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Comida";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comida";
             ((System.ComponentModel.ISupportInitialize)(this.pcbBebida1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSnack4)).EndInit();

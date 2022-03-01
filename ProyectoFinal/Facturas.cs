@@ -41,14 +41,15 @@ namespace ProyectoFinal
             lblHora.Text = informacion.hora;
             lblButacas.Text = informacion.butacas;
             lblAsientos.Text=informacion.cantidadAsientos.ToString();
+            lblSala.Text = informacion.sala.ToString();
             lblSubtotalEntradas.Text="$"+informacion.subtotalEntradas.ToString();
             lblComida.Text=informacion.comida;
             lblSubtotalComida.Text = "$"+informacion.subTotalComida.ToString();
-            informacion.TotalPagar = informacion.subTotalComida + informacion.subtotalEntradas;
+            informacion.TotalPagar = informacion.subTotalComida + informacion.subtotalEntradas;//calcular el total a pagar
             lblTotalPagar.Text = "$"+informacion.TotalPagar.ToString();
-            lblSala.Text = informacion.sala.ToString();
+            
         }
-        void asignarVariables()
+        public void asignarVariables()
         {
             informacion.CI =Datos.CI;
             informacion.nombre= Datos.nombre;

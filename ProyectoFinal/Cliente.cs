@@ -30,7 +30,7 @@ namespace ProyectoFinal
             persona.nombre = txtNombre.Text;
             persona.apellido = txtApellido.Text;
             persona.cedula = txtCedula.Text;
-            if (persona.nombre == "")
+            if (persona.nombre == "" || persona.cedula==""||persona.apellido=="")
             {
                 MessageBox.Show("error llene todos los datos por favor ","Error ingreso",MessageBoxButtons.OK,MessageBoxIcon.Error);
             }

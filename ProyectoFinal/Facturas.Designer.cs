@@ -87,7 +87,7 @@
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Cedula:";
+            this.label3.Text = "Cédula:";
             // 
             // label4
             // 
@@ -114,9 +114,9 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(20, 264);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(42, 13);
+            this.label6.Size = new System.Drawing.Size(45, 13);
             this.label6.TabIndex = 5;
-            this.label6.Text = "Comida";
+            this.label6.Text = "Comida:";
             // 
             // label7
             // 
@@ -124,18 +124,18 @@
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label7.Location = new System.Drawing.Point(21, 170);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(28, 13);
+            this.label7.Size = new System.Drawing.Size(31, 13);
             this.label7.TabIndex = 6;
-            this.label7.Text = "Sala";
+            this.label7.Text = "Sala:";
             // 
             // label8
             // 
             this.label8.AutoSize = true;
             this.label8.Location = new System.Drawing.Point(70, 322);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 13);
+            this.label8.Size = new System.Drawing.Size(84, 13);
             this.label8.TabIndex = 7;
-            this.label8.Text = "SubtotalComida";
+            this.label8.Text = "SubtotalComida:";
             // 
             // label9
             // 
@@ -152,9 +152,9 @@
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label10.Location = new System.Drawing.Point(20, 119);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(47, 13);
+            this.label10.Size = new System.Drawing.Size(49, 13);
             this.label10.TabIndex = 9;
-            this.label10.Text = "Pelicula:";
+            this.label10.Text = "Película:";
             // 
             // label11
             // 
@@ -162,9 +162,9 @@
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label11.Location = new System.Drawing.Point(21, 199);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(72, 13);
+            this.label11.Size = new System.Drawing.Size(75, 13);
             this.label11.TabIndex = 10;
-            this.label11.Text = "Num.Asientos";
+            this.label11.Text = "Num.Asientos:";
             // 
             // label12
             // 
@@ -181,9 +181,9 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(70, 231);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(91, 13);
+            this.label13.Size = new System.Drawing.Size(94, 13);
             this.label13.TabIndex = 12;
-            this.label13.Text = "Subtotal Entradas";
+            this.label13.Text = "Subtotal Entradas:";
             // 
             // lblCedula
             // 
@@ -359,6 +359,7 @@
             this.Controls.Add(this.label1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Facturas";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Facturas";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Facturas_FormClosing);
             this.ResumeLayout(false);

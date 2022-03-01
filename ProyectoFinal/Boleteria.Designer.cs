@@ -62,14 +62,14 @@
             this.cmbPeliculas.Items.AddRange(new object[] {
             "Avengers",
             "Jhon Wick",
-            "Spider-man",
+            "Spiderman",
             "Insidious",
             "Son como niños"});
             this.cmbPeliculas.Location = new System.Drawing.Point(108, 24);
             this.cmbPeliculas.Name = "cmbPeliculas";
             this.cmbPeliculas.Size = new System.Drawing.Size(121, 21);
             this.cmbPeliculas.TabIndex = 0;
-            this.cmbPeliculas.Text = "Spider-man";
+            this.cmbPeliculas.Text = "Spiderman";
             this.cmbPeliculas.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged);
             // 
             // label1
@@ -108,7 +108,6 @@
             this.a1.TabIndex = 5;
             this.a1.Text = "A1";
             this.a1.UseVisualStyleBackColor = true;
-            this.a1.CheckedChanged += new System.EventHandler(this.a1_CheckedChanged);
             // 
             // a2
             // 
@@ -189,7 +188,6 @@
             this.c3.TabIndex = 13;
             this.c3.Text = "C3";
             this.c3.UseVisualStyleBackColor = true;
-            this.c3.CheckedChanged += new System.EventHandler(this.checkBox9_CheckedChanged);
             // 
             // button2
             // 
@@ -231,31 +229,30 @@
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(167, 16);
             this.label7.TabIndex = 24;
-            this.label7.Text = "Costo cada entrada: 5$";
+            this.label7.Text = "Costo cada entrada: $5";
             // 
             // subtitulada
             // 
             this.subtitulada.AutoSize = true;
             this.subtitulada.Location = new System.Drawing.Point(263, 84);
-            this.subtitulada.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.subtitulada.Margin = new System.Windows.Forms.Padding(2);
             this.subtitulada.Name = "subtitulada";
-            this.subtitulada.Size = new System.Drawing.Size(76, 17);
+            this.subtitulada.Size = new System.Drawing.Size(78, 17);
             this.subtitulada.TabIndex = 25;
             this.subtitulada.TabStop = true;
-            this.subtitulada.Text = "subtitulada";
+            this.subtitulada.Text = "Subtitulada";
             this.subtitulada.UseVisualStyleBackColor = true;
-            this.subtitulada.CheckedChanged += new System.EventHandler(this.subtitulada_CheckedChanged);
             // 
             // traducida
             // 
             this.traducida.AutoSize = true;
             this.traducida.Location = new System.Drawing.Point(263, 106);
-            this.traducida.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.traducida.Margin = new System.Windows.Forms.Padding(2);
             this.traducida.Name = "traducida";
-            this.traducida.Size = new System.Drawing.Size(69, 17);
+            this.traducida.Size = new System.Drawing.Size(73, 17);
             this.traducida.TabIndex = 26;
             this.traducida.TabStop = true;
-            this.traducida.Text = "traducida";
+            this.traducida.Text = "Traducida";
             this.traducida.UseVisualStyleBackColor = true;
             // 
             // pbPeliculas

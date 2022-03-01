@@ -18,7 +18,7 @@ namespace ProyectoFinal
         {
             public string snack;
             public string bebida;
-            public String combos;
+            public string combos;
             public double subTotal;
         }
         static public Alimentos alimentos;
@@ -28,20 +28,10 @@ namespace ProyectoFinal
         {
             
             InitializeComponent();
-            alimentos.snack = "Ninguno";
-            alimentos.bebida = "Ninguno";
+            alimentos.snack = "Ninguno";//por defecto en factura ninguno
+            alimentos.bebida = "Ninguno";//por defecto en factura ninguno
             cmbSnack.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbBebidas.DropDownStyle = ComboBoxStyle.DropDownList;
-         
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void chkCombo2_CheckedChanged(object sender, EventArgs e)
-        {
          
         }
 
@@ -171,7 +161,7 @@ namespace ProyectoFinal
         private void btmSiguiente_Click(object sender, EventArgs e)
         {
         }
-        void colocarPrecios()
+        public void colocarPrecios()
         {
             if (chkCombo11.Checked == true)
             {

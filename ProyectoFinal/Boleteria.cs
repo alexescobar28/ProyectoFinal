@@ -34,24 +34,12 @@ namespace ProyectoFinal
             cmbHora.DropDownStyle = ComboBoxStyle.DropDownList;
             contadorBoletos = 0;
         }
-        void contarTipo()
-        {
-            if (subtitulada.Checked)
-            {
-                compra.tipo = "Subtitulada";
-            }
-            if (traducida.Checked)
-            {
-                compra.tipo = "Subtitulada";
-            }
-
-         
-        }
+        
         private void button2_Click(object sender, EventArgs e)
         {
             contarTipo();
             asignarAsientos();
-            if (compra.butacas==null || compra.tipo == "")
+            if (compra.butacas=="" || compra.tipo == "")
             {
                 MessageBox.Show("Preocure llenar todos los campos ", "Error ingreso", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
@@ -59,14 +47,14 @@ namespace ProyectoFinal
             else
             {
                 compra.cantidad = contadorBoletos;
-                compra.subtotalBoletos = compra.cantidad * 5;
-                compra.fecha = dtFecha.Text;
-                Datos.pelicula = compra.pelicula + '-' + compra.tipo;
-                Datos.butacas = compra.butacas;
+                compra.subtotalBoletos = compra.cantidad * VALOR_ENTRADA;
+                compra.fecha = dtFecha.Text;//por defecto el dia hoy 
+                Datos.pelicula = compra.pelicula + '-' + compra.tipo;//asigno variable global concateno pelicula y el tipo 
+                Datos.butacas = compra.butacas;//variable global
                 Datos.fecha = compra.fecha;
                 Datos.hora = compra.hora;
                 Datos.contadorAsientos = contadorBoletos;
-                Datos.subtotalEntradas = VALOR_ENTRADA * contadorBoletos;
+                Datos.subtotalEntradas = compra.subtotalBoletos;
                 Comida comida = new Comida();
                 this.Hide();
                 comida.Show();
@@ -115,21 +103,11 @@ namespace ProyectoFinal
 
 
 
-        private void checkBox9_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void subtitulada_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
         private void DateTimePicker_ValueChanged(object sender, EventArgs e)
         {
             validarFecha();
         }
-        void validarFecha()
+        public void validarFecha()
         {
             DateTime hoy = DateTime.Today;
             if (dtFecha.Value.Date < hoy)
@@ -142,11 +120,6 @@ namespace ProyectoFinal
                 compra.fecha = fecha.ToString();
 
             }
-        }
-
-        private void a1_CheckedChanged(object sender, EventArgs e)
-        {
-
         }
         void asignarAsientos()
         {
@@ -197,7 +170,19 @@ namespace ProyectoFinal
                 compra.butacas += "B6,";
             }
         }
+        public void contarTipo()
+        {
+            if (subtitulada.Checked)
+            {
+                compra.tipo = "Subtitulada";
+            }
+            if (traducida.Checked)
+            {
+                compra.tipo = "Traducida";
+            }
 
+
+        }
         private void comboBox1_SelectedIndexChanged_1(object sender, EventArgs e)
         {
             if (cmbPeliculas.SelectedIndex == 0)

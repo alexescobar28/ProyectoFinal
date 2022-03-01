@@ -30,6 +30,8 @@ namespace ProyectoFinal
         public Boleteria()
         {
             InitializeComponent();
+            compra.pelicula = "spiderman";//por defecto 
+            compra.hora = "11:00"; //por defecto
             cmbPeliculas.DropDownStyle = ComboBoxStyle.DropDownList;
             cmbHora.DropDownStyle = ComboBoxStyle.DropDownList;
             contadorBoletos = 0;
@@ -39,7 +41,7 @@ namespace ProyectoFinal
         {
             contarTipo();
             asignarAsientos();
-            if (compra.butacas=="" || compra.tipo == "")
+            if (compra.butacas==null || compra.tipo == null)
             {
                 MessageBox.Show("Preocure llenar todos los campos ", "Error ingreso", MessageBoxButtons.OK, MessageBoxIcon.Error);
 

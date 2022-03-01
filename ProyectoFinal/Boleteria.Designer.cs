@@ -52,6 +52,7 @@
             this.lblSinopsis = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbHora = new System.Windows.Forms.ComboBox();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pbPeliculas)).BeginInit();
             this.SuspendLayout();
             // 
@@ -65,7 +66,7 @@
             "Spiderman",
             "Insidious",
             "Son como niños"});
-            this.cmbPeliculas.Location = new System.Drawing.Point(108, 24);
+            this.cmbPeliculas.Location = new System.Drawing.Point(117, 43);
             this.cmbPeliculas.Name = "cmbPeliculas";
             this.cmbPeliculas.Size = new System.Drawing.Size(121, 21);
             this.cmbPeliculas.TabIndex = 0;
@@ -75,36 +76,40 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(12, 24);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(28, 43);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(52, 13);
+            this.label1.Size = new System.Drawing.Size(75, 16);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Peliculas ";
+            this.label1.Text = "Películas ";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.Location = new System.Drawing.Point(446, 89);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(37, 13);
+            this.label2.Size = new System.Drawing.Size(50, 16);
             this.label2.TabIndex = 2;
             this.label2.Text = "Fecha";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(260, 263);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.Size = new System.Drawing.Size(71, 16);
             this.label4.TabIndex = 4;
             this.label4.Text = "Asientos ";
             // 
             // a1
             // 
             this.a1.AutoSize = true;
+            this.a1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a1.Location = new System.Drawing.Point(399, 263);
             this.a1.Name = "a1";
-            this.a1.Size = new System.Drawing.Size(39, 17);
+            this.a1.Size = new System.Drawing.Size(42, 20);
             this.a1.TabIndex = 5;
             this.a1.Text = "A1";
             this.a1.UseVisualStyleBackColor = true;
@@ -112,9 +117,10 @@
             // a2
             // 
             this.a2.AutoSize = true;
+            this.a2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a2.Location = new System.Drawing.Point(520, 263);
             this.a2.Name = "a2";
-            this.a2.Size = new System.Drawing.Size(39, 17);
+            this.a2.Size = new System.Drawing.Size(42, 20);
             this.a2.TabIndex = 6;
             this.a2.Text = "A2";
             this.a2.UseVisualStyleBackColor = true;
@@ -122,9 +128,10 @@
             // a3
             // 
             this.a3.AutoSize = true;
+            this.a3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.a3.Location = new System.Drawing.Point(641, 262);
             this.a3.Name = "a3";
-            this.a3.Size = new System.Drawing.Size(39, 17);
+            this.a3.Size = new System.Drawing.Size(42, 20);
             this.a3.TabIndex = 7;
             this.a3.Text = "A3";
             this.a3.UseVisualStyleBackColor = true;
@@ -132,9 +139,10 @@
             // b1
             // 
             this.b1.AutoSize = true;
+            this.b1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b1.Location = new System.Drawing.Point(399, 300);
             this.b1.Name = "b1";
-            this.b1.Size = new System.Drawing.Size(39, 17);
+            this.b1.Size = new System.Drawing.Size(42, 20);
             this.b1.TabIndex = 8;
             this.b1.Text = "B1";
             this.b1.UseVisualStyleBackColor = true;
@@ -142,9 +150,10 @@
             // b2
             // 
             this.b2.AutoSize = true;
+            this.b2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b2.Location = new System.Drawing.Point(520, 300);
             this.b2.Name = "b2";
-            this.b2.Size = new System.Drawing.Size(39, 17);
+            this.b2.Size = new System.Drawing.Size(42, 20);
             this.b2.TabIndex = 9;
             this.b2.Text = "B2";
             this.b2.UseVisualStyleBackColor = true;
@@ -152,9 +161,10 @@
             // b3
             // 
             this.b3.AutoSize = true;
+            this.b3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.b3.Location = new System.Drawing.Point(641, 300);
             this.b3.Name = "b3";
-            this.b3.Size = new System.Drawing.Size(39, 17);
+            this.b3.Size = new System.Drawing.Size(42, 20);
             this.b3.TabIndex = 10;
             this.b3.Text = "B3";
             this.b3.UseVisualStyleBackColor = true;
@@ -162,9 +172,10 @@
             // c1
             // 
             this.c1.AutoSize = true;
+            this.c1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c1.Location = new System.Drawing.Point(399, 334);
             this.c1.Name = "c1";
-            this.c1.Size = new System.Drawing.Size(39, 17);
+            this.c1.Size = new System.Drawing.Size(42, 20);
             this.c1.TabIndex = 11;
             this.c1.Text = "C1";
             this.c1.UseVisualStyleBackColor = true;
@@ -172,9 +183,10 @@
             // c2
             // 
             this.c2.AutoSize = true;
+            this.c2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c2.Location = new System.Drawing.Point(520, 334);
             this.c2.Name = "c2";
-            this.c2.Size = new System.Drawing.Size(39, 17);
+            this.c2.Size = new System.Drawing.Size(42, 20);
             this.c2.TabIndex = 12;
             this.c2.Text = "C2";
             this.c2.UseVisualStyleBackColor = true;
@@ -182,16 +194,18 @@
             // c3
             // 
             this.c3.AutoSize = true;
+            this.c3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.c3.Location = new System.Drawing.Point(641, 334);
             this.c3.Name = "c3";
-            this.c3.Size = new System.Drawing.Size(39, 17);
+            this.c3.Size = new System.Drawing.Size(42, 20);
             this.c3.TabIndex = 13;
             this.c3.Text = "C3";
             this.c3.UseVisualStyleBackColor = true;
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(520, 381);
+            this.button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.button2.Location = new System.Drawing.Point(492, 360);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(79, 35);
             this.button2.TabIndex = 15;
@@ -212,11 +226,11 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.Location = new System.Drawing.Point(261, 158);
             this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(54, 13);
+            this.label3.Size = new System.Drawing.Size(67, 16);
             this.label3.TabIndex = 19;
             this.label3.Text = "Sinopsis";
             // 
@@ -224,7 +238,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(442, 32);
+            this.label7.Location = new System.Drawing.Point(446, 48);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(167, 16);
@@ -234,10 +248,11 @@
             // subtitulada
             // 
             this.subtitulada.AutoSize = true;
+            this.subtitulada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.subtitulada.Location = new System.Drawing.Point(263, 84);
             this.subtitulada.Margin = new System.Windows.Forms.Padding(2);
             this.subtitulada.Name = "subtitulada";
-            this.subtitulada.Size = new System.Drawing.Size(78, 17);
+            this.subtitulada.Size = new System.Drawing.Size(92, 20);
             this.subtitulada.TabIndex = 25;
             this.subtitulada.TabStop = true;
             this.subtitulada.Text = "Subtitulada";
@@ -246,10 +261,11 @@
             // traducida
             // 
             this.traducida.AutoSize = true;
+            this.traducida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.traducida.Location = new System.Drawing.Point(263, 106);
             this.traducida.Margin = new System.Windows.Forms.Padding(2);
             this.traducida.Name = "traducida";
-            this.traducida.Size = new System.Drawing.Size(73, 17);
+            this.traducida.Size = new System.Drawing.Size(87, 20);
             this.traducida.TabIndex = 26;
             this.traducida.TabStop = true;
             this.traducida.Text = "Traducida";
@@ -268,6 +284,7 @@
             // 
             // lblSinopsis
             // 
+            this.lblSinopsis.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblSinopsis.Location = new System.Drawing.Point(261, 184);
             this.lblSinopsis.Name = "lblSinopsis";
             this.lblSinopsis.Size = new System.Drawing.Size(474, 61);
@@ -277,9 +294,10 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.Location = new System.Drawing.Point(448, 129);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(33, 13);
+            this.label5.Size = new System.Drawing.Size(45, 16);
             this.label5.TabIndex = 28;
             this.label5.Text = "Hora:";
             // 
@@ -301,11 +319,23 @@
             this.cmbHora.Text = "11:00";
             this.cmbHora.SelectedIndexChanged += new System.EventHandler(this.comboBox1_SelectedIndexChanged_1);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(308, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(124, 24);
+            this.label6.TabIndex = 30;
+            this.label6.Text = "BOLETERIA";
+            // 
             // Boleteria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(761, 432);
+            this.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.ClientSize = new System.Drawing.Size(747, 406);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.cmbHora);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblSinopsis);
@@ -363,5 +393,6 @@
         private System.Windows.Forms.Label lblSinopsis;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbHora;
+        private System.Windows.Forms.Label label6;
     }
 }

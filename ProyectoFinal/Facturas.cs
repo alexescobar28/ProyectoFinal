@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class Facturas : Form
+    public partial class frmFacturas : Form
     {
-        public struct Facturar
+        public struct Facturacion
         {
             public string CI;
             public string nombre;
@@ -28,11 +28,11 @@ namespace ProyectoFinal
             public double subTotalComida;
             public double TotalPagar;
         }
-        static public Facturar informacion;
-        public Facturas()
+        static public Facturacion informacion;
+        public frmFacturas()
         {
             InitializeComponent();
-            asignarVariables();
+            AsignarVariables();
             lblCedula.Text = informacion.CI;
             lblNombre.Text = informacion.nombre;
             lblApellido.Text = informacion.apellido;
@@ -49,7 +49,7 @@ namespace ProyectoFinal
             lblTotalPagar.Text = "$"+informacion.TotalPagar.ToString();
             
         }
-        public void asignarVariables()
+        public void AsignarVariables()
         {
             informacion.CI =Datos.CI;
             informacion.nombre= Datos.nombre;

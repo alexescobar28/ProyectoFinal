@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class Boleteria : Form
+    public partial class frmBoleteria : Form
     {
 
         public struct InformacionCompra
@@ -27,7 +27,7 @@ namespace ProyectoFinal
         
         int contadorBoletos;
         const int VALOR_ENTRADA = 5;
-        public Boleteria()
+        public frmBoleteria()
         {
             InitializeComponent();
             compra.pelicula = "spiderman";//por defecto 
@@ -39,8 +39,8 @@ namespace ProyectoFinal
         
         private void button2_Click(object sender, EventArgs e)
         {
-            contarTipo();
-            asignarAsientos();
+            ContarTipo();
+            AsignarAsientos();
             if (compra.butacas==null || compra.tipo == null)
             {
                 MessageBox.Show("Preocure llenar todos los campos ", "Error ingreso", MessageBoxButtons.OK, MessageBoxIcon.Error);
@@ -57,7 +57,7 @@ namespace ProyectoFinal
                 Datos.hora = compra.hora;
                 Datos.contadorAsientos = contadorBoletos;
                 Datos.subtotalEntradas = compra.subtotalBoletos;
-                Comida comida = new Comida();
+                frmComida comida = new frmComida();
                 this.Hide();
                 comida.Show();
             }
@@ -70,32 +70,32 @@ namespace ProyectoFinal
 
             if (cmbPeliculas.SelectedIndex == 0)
             {
-                pbPeliculas.Image = ProyectoFinal.Properties.Resources.Avengers;
+                pcbPeliculas.Image = ProyectoFinal.Properties.Resources.Avengers;
                 compra.pelicula = cmbPeliculas.Text;
                 lblSinopsis.Text = "Tras los sucesos de “Vengadores: Infinity War”, los superhéroes que sobrevivieron a Thanos se reunen para poner en práctica un plan definitivo que podría acabar con el villano definitivamente. No saben si funcionará, pero es su única oportunidad de intentarlo. Cuarta entrega de la saga “Vengadores”";
                 
             }
             if (cmbPeliculas.SelectedIndex == 1)
             {
-                pbPeliculas.Image = ProyectoFinal.Properties.Resources.John_Wick;
+                pcbPeliculas.Image = ProyectoFinal.Properties.Resources.John_Wick;
                 compra.pelicula = cmbPeliculas.Text;
                 lblSinopsis.Text = "En Nueva York, John Wick, un asesino a sueldo retirado, vuelve otra vez a la acción para vengarse de los gángsters que le quitaron todo.";
             }
             if (cmbPeliculas.SelectedIndex == 2)
             {
-                pbPeliculas.Image = ProyectoFinal.Properties.Resources.Spider_man;
+                pcbPeliculas.Image = ProyectoFinal.Properties.Resources.Spider_man;
                 compra.pelicula = cmbPeliculas.Text;
                 lblSinopsis.Text = "Después de que Mysterio desvelara la identidad de Spider-Man a todo el mundo en Lejos de casa, Peter Parker (Tom Holland), desesperado por volver a la normalidad y recuperar su anterior vida, pide ayuda a Doctor Strange para enmendar tal acción. El Hechicero Supremo de Marvel accede a ayudar al joven Hombre Araña, sin embargo, algo sale mal y el multiverso se convierte en la mayor amenaza hasta el momento.";
             }
             if (cmbPeliculas.SelectedIndex == 3)
             {
-                pbPeliculas.Image = ProyectoFinal.Properties.Resources.Insidious;
+                pcbPeliculas.Image = ProyectoFinal.Properties.Resources.Insidious;
                 compra.pelicula = cmbPeliculas.Text;
                 lblSinopsis.Text = "Josh, su esposa Reani y sus tres hijos se mudan a una nueva casa cuando uno de los hijos cae en un estado de coma sin explicación. Poco tiempo después, una sucesión de fenómenos paranormales comienza a producirse. Un medium les dice que el alma de su hijo se encuentra en algún lugar entre la vida y la muerte en la dimensió...";
             }
             if (cmbPeliculas.SelectedIndex == 4)
             {
-                pbPeliculas.Image = ProyectoFinal.Properties.Resources.Son_como_niños;
+                pcbPeliculas.Image = ProyectoFinal.Properties.Resources.Son_como_niños;
                 compra.pelicula = cmbPeliculas.Text;
                 lblSinopsis.Text = "La muerte del entrenador de baloncesto de su infancia lleva a una reunión de viejos amigos (Adam Sandler, Kevin James, Chris Rock), que se reúnen en el lugar de la celebración de un campeonato años antes. Continuando donde lo dejaron, los amigos, con esposas e hijos a cuestas, descubren por qué la edad no es necesariamente igual a la madurez. ";
             }
@@ -107,9 +107,9 @@ namespace ProyectoFinal
 
         private void DateTimePicker_ValueChanged(object sender, EventArgs e)
         {
-            validarFecha();
+            ValidarFecha();
         }
-        public void validarFecha()
+        public void ValidarFecha()
         {
             DateTime hoy = DateTime.Today;
             if (dtFecha.Value.Date < hoy)
@@ -123,7 +123,7 @@ namespace ProyectoFinal
 
             }
         }
-        void asignarAsientos()
+        public void AsignarAsientos()
         {
             if (a1.Checked == true)
             {
@@ -172,13 +172,13 @@ namespace ProyectoFinal
                 compra.butacas += "C3,";
             }
         }
-        public void contarTipo()
+        public void ContarTipo()
         {
-            if (subtitulada.Checked)
+            if (rdSubtitulada.Checked)
             {
                 compra.tipo = "Subtitulada";
             }
-            if (traducida.Checked)
+            if (rdTraducida.Checked)
             {
                 compra.tipo = "Traducida";
             }

@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal
 {
-    partial class Comida
+    partial class frmComida
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Comida));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmComida));
             this.chkCombo11 = new System.Windows.Forms.CheckBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -50,9 +50,9 @@
             this.pcbSnack3 = new System.Windows.Forms.PictureBox();
             this.pcbSnack2 = new System.Windows.Forms.PictureBox();
             this.pcbSnack1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.pcbCombo3 = new System.Windows.Forms.PictureBox();
+            this.pcbCombo2 = new System.Windows.Forms.PictureBox();
+            this.pcbCombo1 = new System.Windows.Forms.PictureBox();
             this.pcbBebida2 = new System.Windows.Forms.PictureBox();
             this.pcbBebida3 = new System.Windows.Forms.PictureBox();
             this.pcbBebida4 = new System.Windows.Forms.PictureBox();
@@ -61,9 +61,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbSnack3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSnack2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSnack1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCombo3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCombo2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCombo1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBebida2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBebida3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBebida4)).BeginInit();
@@ -275,35 +275,35 @@
             this.pcbSnack1.TabIndex = 19;
             this.pcbSnack1.TabStop = false;
             // 
-            // pictureBox3
+            // pcbCombo3
             // 
-            this.pictureBox3.Image = global::ProyectoFinal.Properties.Resources.Combo_3;
-            this.pictureBox3.Location = new System.Drawing.Point(463, 373);
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(107, 98);
-            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox3.TabIndex = 18;
-            this.pictureBox3.TabStop = false;
+            this.pcbCombo3.Image = global::ProyectoFinal.Properties.Resources.Combo_3;
+            this.pcbCombo3.Location = new System.Drawing.Point(463, 373);
+            this.pcbCombo3.Name = "pcbCombo3";
+            this.pcbCombo3.Size = new System.Drawing.Size(107, 98);
+            this.pcbCombo3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbCombo3.TabIndex = 18;
+            this.pcbCombo3.TabStop = false;
             // 
-            // pictureBox2
+            // pcbCombo2
             // 
-            this.pictureBox2.Image = global::ProyectoFinal.Properties.Resources.Combo_2;
-            this.pictureBox2.Location = new System.Drawing.Point(282, 373);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(119, 98);
-            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox2.TabIndex = 17;
-            this.pictureBox2.TabStop = false;
+            this.pcbCombo2.Image = global::ProyectoFinal.Properties.Resources.Combo_2;
+            this.pcbCombo2.Location = new System.Drawing.Point(282, 373);
+            this.pcbCombo2.Name = "pcbCombo2";
+            this.pcbCombo2.Size = new System.Drawing.Size(119, 98);
+            this.pcbCombo2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbCombo2.TabIndex = 17;
+            this.pcbCombo2.TabStop = false;
             // 
-            // pictureBox1
+            // pcbCombo1
             // 
-            this.pictureBox1.Image = global::ProyectoFinal.Properties.Resources.Combo_1;
-            this.pictureBox1.Location = new System.Drawing.Point(115, 373);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(106, 98);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 16;
-            this.pictureBox1.TabStop = false;
+            this.pcbCombo1.Image = global::ProyectoFinal.Properties.Resources.Combo_1;
+            this.pcbCombo1.Location = new System.Drawing.Point(115, 373);
+            this.pcbCombo1.Name = "pcbCombo1";
+            this.pcbCombo1.Size = new System.Drawing.Size(106, 98);
+            this.pcbCombo1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbCombo1.TabIndex = 16;
+            this.pcbCombo1.TabStop = false;
             // 
             // pcbBebida2
             // 
@@ -335,7 +335,7 @@
             this.pcbBebida4.TabIndex = 26;
             this.pcbBebida4.TabStop = false;
             // 
-            // Comida
+            // frmComida
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -349,9 +349,9 @@
             this.Controls.Add(this.pcbSnack3);
             this.Controls.Add(this.pcbSnack2);
             this.Controls.Add(this.pcbSnack1);
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.pcbCombo3);
+            this.Controls.Add(this.pcbCombo2);
+            this.Controls.Add(this.pcbCombo1);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.lbl);
             this.Controls.Add(this.label4);
@@ -368,7 +368,7 @@
             this.Controls.Add(this.label1);
             this.ForeColor = System.Drawing.Color.Black;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Comida";
+            this.Name = "frmComida";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Comida";
             ((System.ComponentModel.ISupportInitialize)(this.pcbBebida1)).EndInit();
@@ -376,9 +376,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.pcbSnack3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSnack2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbSnack1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCombo3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCombo2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbCombo1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBebida2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBebida3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pcbBebida4)).EndInit();
@@ -403,9 +403,9 @@
         private System.Windows.Forms.Label lbl;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.ImageList imageList1;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
+        private System.Windows.Forms.PictureBox pcbCombo1;
+        private System.Windows.Forms.PictureBox pcbCombo2;
+        private System.Windows.Forms.PictureBox pcbCombo3;
         private System.Windows.Forms.PictureBox pcbSnack1;
         private System.Windows.Forms.PictureBox pcbSnack2;
         private System.Windows.Forms.PictureBox pcbSnack3;

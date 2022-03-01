@@ -1,6 +1,6 @@
 ﻿namespace ProyectoFinal
 {
-    partial class Boleteria
+    partial class frmBoleteria
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Boleteria));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmBoleteria));
             this.cmbPeliculas = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -46,14 +46,14 @@
             this.dtFecha = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.subtitulada = new System.Windows.Forms.RadioButton();
-            this.traducida = new System.Windows.Forms.RadioButton();
-            this.pbPeliculas = new System.Windows.Forms.PictureBox();
+            this.rdSubtitulada = new System.Windows.Forms.RadioButton();
+            this.rdTraducida = new System.Windows.Forms.RadioButton();
+            this.pcbPeliculas = new System.Windows.Forms.PictureBox();
             this.lblSinopsis = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.cmbHora = new System.Windows.Forms.ComboBox();
             this.label6 = new System.Windows.Forms.Label();
-            ((System.ComponentModel.ISupportInitialize)(this.pbPeliculas)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPeliculas)).BeginInit();
             this.SuspendLayout();
             // 
             // cmbPeliculas
@@ -245,42 +245,42 @@
             this.label7.TabIndex = 24;
             this.label7.Text = "Costo cada entrada: $5";
             // 
-            // subtitulada
+            // rdSubtitulada
             // 
-            this.subtitulada.AutoSize = true;
-            this.subtitulada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.subtitulada.Location = new System.Drawing.Point(263, 84);
-            this.subtitulada.Margin = new System.Windows.Forms.Padding(2);
-            this.subtitulada.Name = "subtitulada";
-            this.subtitulada.Size = new System.Drawing.Size(92, 20);
-            this.subtitulada.TabIndex = 25;
-            this.subtitulada.TabStop = true;
-            this.subtitulada.Text = "Subtitulada";
-            this.subtitulada.UseVisualStyleBackColor = true;
+            this.rdSubtitulada.AutoSize = true;
+            this.rdSubtitulada.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdSubtitulada.Location = new System.Drawing.Point(263, 84);
+            this.rdSubtitulada.Margin = new System.Windows.Forms.Padding(2);
+            this.rdSubtitulada.Name = "rdSubtitulada";
+            this.rdSubtitulada.Size = new System.Drawing.Size(92, 20);
+            this.rdSubtitulada.TabIndex = 25;
+            this.rdSubtitulada.TabStop = true;
+            this.rdSubtitulada.Text = "Subtitulada";
+            this.rdSubtitulada.UseVisualStyleBackColor = true;
             // 
-            // traducida
+            // rdTraducida
             // 
-            this.traducida.AutoSize = true;
-            this.traducida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.traducida.Location = new System.Drawing.Point(263, 106);
-            this.traducida.Margin = new System.Windows.Forms.Padding(2);
-            this.traducida.Name = "traducida";
-            this.traducida.Size = new System.Drawing.Size(87, 20);
-            this.traducida.TabIndex = 26;
-            this.traducida.TabStop = true;
-            this.traducida.Text = "Traducida";
-            this.traducida.UseVisualStyleBackColor = true;
+            this.rdTraducida.AutoSize = true;
+            this.rdTraducida.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.rdTraducida.Location = new System.Drawing.Point(263, 106);
+            this.rdTraducida.Margin = new System.Windows.Forms.Padding(2);
+            this.rdTraducida.Name = "rdTraducida";
+            this.rdTraducida.Size = new System.Drawing.Size(87, 20);
+            this.rdTraducida.TabIndex = 26;
+            this.rdTraducida.TabStop = true;
+            this.rdTraducida.Text = "Traducida";
+            this.rdTraducida.UseVisualStyleBackColor = true;
             // 
-            // pbPeliculas
+            // pcbPeliculas
             // 
-            this.pbPeliculas.Image = global::ProyectoFinal.Properties.Resources.Spider_man;
-            this.pbPeliculas.Location = new System.Drawing.Point(31, 75);
-            this.pbPeliculas.Margin = new System.Windows.Forms.Padding(2);
-            this.pbPeliculas.Name = "pbPeliculas";
-            this.pbPeliculas.Size = new System.Drawing.Size(197, 280);
-            this.pbPeliculas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pbPeliculas.TabIndex = 18;
-            this.pbPeliculas.TabStop = false;
+            this.pcbPeliculas.Image = global::ProyectoFinal.Properties.Resources.Spider_man;
+            this.pcbPeliculas.Location = new System.Drawing.Point(31, 75);
+            this.pcbPeliculas.Margin = new System.Windows.Forms.Padding(2);
+            this.pcbPeliculas.Name = "pcbPeliculas";
+            this.pcbPeliculas.Size = new System.Drawing.Size(197, 280);
+            this.pcbPeliculas.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pcbPeliculas.TabIndex = 18;
+            this.pcbPeliculas.TabStop = false;
             // 
             // lblSinopsis
             // 
@@ -329,7 +329,7 @@
             this.label6.TabIndex = 30;
             this.label6.Text = "BOLETERIA";
             // 
-            // Boleteria
+            // frmBoleteria
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -339,11 +339,11 @@
             this.Controls.Add(this.cmbHora);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.lblSinopsis);
-            this.Controls.Add(this.traducida);
-            this.Controls.Add(this.subtitulada);
+            this.Controls.Add(this.rdTraducida);
+            this.Controls.Add(this.rdSubtitulada);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.pbPeliculas);
+            this.Controls.Add(this.pcbPeliculas);
             this.Controls.Add(this.dtFecha);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.c3);
@@ -360,10 +360,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.cmbPeliculas);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Boleteria";
+            this.Name = "frmBoleteria";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Boleteria ";
-            ((System.ComponentModel.ISupportInitialize)(this.pbPeliculas)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pcbPeliculas)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -386,11 +386,11 @@
         private System.Windows.Forms.CheckBox c3;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.DateTimePicker dtFecha;
-        private System.Windows.Forms.PictureBox pbPeliculas;
+        private System.Windows.Forms.PictureBox pcbPeliculas;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.RadioButton subtitulada;
-        private System.Windows.Forms.RadioButton traducida;
+        private System.Windows.Forms.RadioButton rdSubtitulada;
+        private System.Windows.Forms.RadioButton rdTraducida;
         private System.Windows.Forms.Label lblSinopsis;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.ComboBox cmbHora;

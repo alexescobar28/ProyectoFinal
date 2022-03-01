@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class Cliente : Form
+    public partial class frmCliente : Form
     {
         public struct InformacionCliente
         {
@@ -20,7 +20,7 @@ namespace ProyectoFinal
 
         }
         static public InformacionCliente persona;
-        public Cliente()
+        public frmCliente()
         {
             InitializeComponent();
         }
@@ -39,7 +39,7 @@ namespace ProyectoFinal
                 Datos.CI = persona.cedula;
                 Datos.nombre = persona.nombre;
                 Datos.apellido = persona.apellido;
-                Boleteria boleteria = new Boleteria();
+                frmBoleteria boleteria = new frmBoleteria();
                 this.Hide();
                 boleteria.Show();
             }

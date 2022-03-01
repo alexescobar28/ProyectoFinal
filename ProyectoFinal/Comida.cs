@@ -10,7 +10,7 @@ using System.Windows.Forms;
 
 namespace ProyectoFinal
 {
-    public partial class Comida : Form
+    public partial class frmComida : Form
     {
        
 
@@ -24,7 +24,7 @@ namespace ProyectoFinal
         static public Alimentos alimentos;
 
         
-        public Comida()
+        public frmComida()
         {
             
             InitializeComponent();
@@ -37,10 +37,10 @@ namespace ProyectoFinal
 
         private void btmCalcular_Click(object sender, EventArgs e)
         {
-            colocarPrecios();
+            ColocarPrecios();
             Datos.comida=alimentos.combos+"\nSnack:"+alimentos.snack + "\nBebida:"+alimentos.bebida;
             Datos.subtotalComidas = alimentos.subTotal;
-            Facturas facturas = new Facturas();
+            frmFacturas facturas = new frmFacturas();
             this.Hide();
             facturas.Show();
            
@@ -155,7 +155,7 @@ namespace ProyectoFinal
             pcbBebida4.Visible = false;
         }
 
-        public void colocarPrecios()
+        public void ColocarPrecios()
         {
             if (chkCombo11.Checked == true)
             {

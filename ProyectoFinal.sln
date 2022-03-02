@@ -5,6 +5,8 @@ VisualStudioVersion = 17.0.32112.339
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProyectoFinal", "ProyectoFinal\ProyectoFinal.csproj", "{12C5B07F-C1D7-428A-9CF4-DD55D0C011EB}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "intaladorCine", "intaladorCine\intaladorCine.vdproj", "{F9F73F15-D445-43A8-8782-D7D2B74CE67D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,8 @@ Global
 		{12C5B07F-C1D7-428A-9CF4-DD55D0C011EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{12C5B07F-C1D7-428A-9CF4-DD55D0C011EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{12C5B07F-C1D7-428A-9CF4-DD55D0C011EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F9F73F15-D445-43A8-8782-D7D2B74CE67D}.Debug|Any CPU.ActiveCfg = Debug
+		{F9F73F15-D445-43A8-8782-D7D2B74CE67D}.Release|Any CPU.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

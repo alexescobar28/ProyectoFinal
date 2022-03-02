@@ -63,6 +63,16 @@ namespace ProyectoFinal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Avengers {
+            get {
+                object obj = ResourceManager.GetObject("Avengers", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Bebida_2 {
             get {
                 object obj = ResourceManager.GetObject("Bebida 2", resourceCulture);
@@ -133,6 +143,26 @@ namespace ProyectoFinal.Properties {
         /// <summary>
         ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Insidious {
+            get {
+                object obj = ResourceManager.GetObject("Insidious", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap John_Wick {
+            get {
+                object obj = ResourceManager.GetObject("John_Wick", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap Snack_1 {
             get {
                 object obj = ResourceManager.GetObject("Snack 1", resourceCulture);
@@ -166,6 +196,26 @@ namespace ProyectoFinal.Properties {
         internal static System.Drawing.Bitmap Snack_4 {
             get {
                 object obj = ResourceManager.GetObject("Snack 4", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Son_como_niños {
+            get {
+                object obj = ResourceManager.GetObject("Son_como_niños", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Busca un recurso adaptado de tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap Spider_man {
+            get {
+                object obj = ResourceManager.GetObject("Spider_man", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
